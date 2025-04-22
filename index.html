@@ -73,7 +73,9 @@
 <body>
   <div id="colorlib-page">
     <div class="container-wrap">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
+         data-toggle="collapse" data-target="#navbar"
+         aria-expanded="false" aria-controls="navbar"><i></i></a>
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
           <!-- Profile image -->
@@ -126,14 +128,16 @@
                   <div class="col-md-12">
                     <div class="about-desc">
                       <h2 class="colorlib-heading">About Me</h2>
-                      <p style="font-size:16px;text-align:justify;">I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision‑making processes, coupled human‑natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio‑environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!</p>
+                      <p style="font-size:16px;text-align:justify;">
+                        I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision‑making processes, coupled human‑natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio‑environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- NEWS (optional, can add items later) -->
+            <!-- NEWS -->
             <div class="row row-bottom-padded-sm">
               <div class="news col-md-12">
                 <h2 class="colorlib-heading">NEWS</h2>
@@ -163,7 +167,7 @@
                 <div class="blog-entry">
                   <div class="desc">
                     <h3><a href="https://arxiv.org" target="_blank">Title of Research Project</a></h3>
-                    <span><small>Journal / Conference</small> | <small> Authors </small></span>
+                    <span><small>Journal / Conference</small> | <small>Authors</small></span>
                     <p>Short description of the research project goes here.</p>
                   </div>
                 </div>
@@ -244,12 +248,20 @@
   <!-- MAIN JS -->
   <script src="js/main.js"></script>
 
-  <!-- Inline script to handle smooth scroll and active menu highlight -->
+  <!-- Inline script to handle smooth scroll, immediate click‐active, and active‐on‐scroll -->
   <script>
-    // Smooth scrolling on click
+    // cache nav items
+    const navItems = document.querySelectorAll('#navbar ul li');
+
+    // Smooth scroll + immediate‐set‐active on click
     document.querySelectorAll('a[data-nav-section]').forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault();
+        // remove active from all
+        navItems.forEach(li => li.classList.remove('active'));
+        // set active on this one
+        link.parentElement.classList.add('active');
+        // scroll smoothly
         const sec = document.querySelector(
           `section[data-section="${ link.dataset.navSection }"]`
         );
@@ -260,13 +272,8 @@
       });
     });
 
-    // IntersectionObserver to toggle 'active' on the sidebar
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5
-    };
-    const navItems = document.querySelectorAll('#navbar ul li');
+    // IntersectionObserver to toggle 'active' on scroll
+    const options = { root: null, rootMargin: '0px', threshold: 0.5 };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
