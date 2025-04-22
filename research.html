@@ -1,23 +1,65 @@
-
-<!-- research.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- same <head> as index.html -->
-  … (copy everything from index.html up through the <style> block and Modernizr)
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Research – Koorosh Azizi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- same metas & CSS as index.html -->
+  <link rel="shortcut icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .author-img { width:180px; height:180px; border-radius:50%; background-size:cover!important; background-position:center top!important; margin:0 auto 15px; }
+    #navbar ul li.active a { color:#3498db; font-weight:700; }
+  </style>
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
 </head>
 <body>
   <div id="colorlib-page">
     <div class="container-wrap">
-      <!-- copy the entire <aside> from index.html unchanged -->
-      <aside id="colorlib-aside">…</aside>
 
+      <!-- SIDEBAR (copy from index) -->
+      <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+        <div class="text-center">
+          <a href="images/Profile.png" target="_blank">
+            <div class="author-img" style="background-image: url('images/Profile.png');"></div>
+          </a>
+          <h1 id="colorlib-logo"><a href="index.html">Koorosh Azizi</a></h1>
+          <span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span>
+        </div>
+        <nav id="colorlib-main-menu" role="navigation" class="navbar">
+          <div id="navbar" class="collapse">
+            <ul>
+              <li><a href="index.html">ABOUT</a></li>
+              <li class="active"><a href="research.html">RESEARCH</a></li>
+              <li><a href="methods.html">METHODS</a></li>
+              <li><a href="publications.html">PUBLICATIONS</a></li>
+              <li><a href="teaching.html">TEACHING & MENTORING</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="text-center social-media">…</div>
+        <div class="colorlib-footer" style="position:absolute; bottom:0; width:100%;">…</div>
+      </aside>
+      <!-- END SIDEBAR -->
+
+      <!-- MAIN -->
       <div id="colorlib-main">
-        <!-- only the RESEARCH section -->
-        <section class="colorlib-blog" data-section="research">
+        <section class="colorlib-blog">
           <div class="colorlib-narrow-content">
             <div class="row">
-              <div class="col-md-6 col-md-offset-3 col-md-pull-3">
+              <div class="col-md-6 col-md-offset-3">
                 <h2 class="colorlib-heading">RESEARCH</h2>
               </div>
             </div>
@@ -32,14 +74,8 @@
               <div class="col-md-8 col-sm-6">
                 <div class="blog-entry">
                   <div class="desc">
-                    <h3>
-                      <a href="https://arxiv.org" target="_blank">
-                        Title of Research Project
-                      </a>
-                    </h3>
-                    <span>
-                      <small>Journal / Conference</small> | <small>Authors</small>
-                    </span>
+                    <h3><a href="https://arxiv.org" target="_blank">Title of Research Project</a></h3>
+                    <span><small>Journal / Conference</small> | <small>Authors</small></span>
                     <p>Short description of the research project goes here.</p>
                   </div>
                 </div>
@@ -47,12 +83,12 @@
             </div>
           </div>
         </section>
-      </div>
+      </div><!-- END MAIN -->
 
-    </div>
-  </div>
+    </div><!-- END CONTAINER -->
+  </div><!-- END PAGE -->
 
-  <!-- same Scripts as index.html -->
+  <!-- SCRIPTS -->
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/bootstrap.min.js"></script>
