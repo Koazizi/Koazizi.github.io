@@ -23,7 +23,6 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
 
@@ -48,6 +47,10 @@
 
   <!-- Modernizr JS -->
   <script src="js/modernizr-2.6.2.min.js"></script>
+  <!-- FOR IE9 below -->
+  <!--[if lt IE 9]>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
 
   <!-- Custom overrides -->
   <style>
@@ -70,24 +73,18 @@
 <body>
   <div id="colorlib-page">
     <div class="container-wrap">
-      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"
-         data-toggle="collapse" data-target="#navbar"
-         aria-expanded="false" aria-controls="navbar"><i></i></a>
-
-      <!-- SIDEBAR -->
+      <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
+          <!-- Profile image -->
           <a href="Images/Profile.png" target="_blank">
-            <div class="author-img"
-                 style="background-image: url('Images/Profile.png');">
-            </div>
+            <div class="author-img" style="background-image: url('Images/Profile.png');"></div>
           </a>
           <h1 id="colorlib-logo"><a href="index.html">Koorosh Azizi</a></h1>
-          <span class="position">
-            <a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a>
-          </span>
+          <span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span>
         </div>
 
+        <!-- Sidebar navigation -->
         <nav id="colorlib-main-menu" role="navigation" class="navbar">
           <div id="navbar" class="collapse">
             <ul>
@@ -100,6 +97,7 @@
           </div>
         </nav>
 
+        <!-- Social media icons -->
         <div class="text-center social-media">
           <ul>
             <li><a href="mailto:koorosh.azizi.92@gmail.com?cc=koorosh.azizi@austin.utexas.edu"><i class="icon-mail5"></i></a></li>
@@ -110,12 +108,13 @@
           </ul>
         </div>
 
+        <!-- Footer -->
         <div class="colorlib-footer" style="position: absolute; bottom: 0; width: 100%;">
           <p><small>&copy; <script>document.write(new Date().getFullYear());</script> All rights reserved. Made by <a href="https://colorlib.com" target="_blank">Colorlib</a> &nbsp;|&nbsp; Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></small></p>
         </div>
       </aside>
 
-      <!-- MAIN CONTENT -->
+      <!-- Main content -->
       <div id="colorlib-main">
 
         <!-- ABOUT SECTION -->
@@ -127,19 +126,19 @@
                   <div class="col-md-12">
                     <div class="about-desc">
                       <h2 class="colorlib-heading">About Me</h2>
-                      <p style="font-size:16px;text-align:justify;">
-                        I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision‑making processes, coupled human‑natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio‑environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!
-                      </p>
+                      <p style="font-size:16px;text-align:justify;">I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision‑making processes, coupled human‑natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio‑environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            <!-- NEWS (optional, can add items later) -->
             <div class="row row-bottom-padded-sm">
               <div class="news col-md-12">
                 <h2 class="colorlib-heading">NEWS</h2>
                 <ul>
-                  <!-- Add your news items here -->
+                  <!-- <li>Example news item</li> -->
                 </ul>
               </div>
             </div>
@@ -164,7 +163,7 @@
                 <div class="blog-entry">
                   <div class="desc">
                     <h3><a href="https://arxiv.org" target="_blank">Title of Research Project</a></h3>
-                    <span><small>Journal / Conference</small> | <small>Authors</small></span>
+                    <span><small>Journal / Conference</small> | <small> Authors </small></span>
                     <p>Short description of the research project goes here.</p>
                   </div>
                 </div>
@@ -230,12 +229,22 @@
 
   <!-- jQuery -->
   <script src="js/jquery.min.js"></script>
+  <!-- jQuery Easing -->
+  <script src="js/jquery.easing.1.3.js"></script>
   <!-- Bootstrap -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- Waypoints (optional if still used elsewhere) -->
+  <!-- Waypoints -->
   <script src="js/jquery.waypoints.min.js"></script>
+  <!-- Flexslider -->
+  <script src="js/jquery.flexslider-min.js"></script>
+  <!-- Owl carousel -->
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- Counters -->
+  <script src="js/jquery.countTo.js"></script>
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>
 
-  <!-- Custom JS -->
+  <!-- Inline script to handle smooth scroll and active menu highlight -->
   <script>
     // Smooth scrolling on click
     document.querySelectorAll('a[data-nav-section]').forEach(link => {
