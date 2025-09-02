@@ -11,48 +11,137 @@
   <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    body { font-family: 'Poppins', sans-serif; line-height: 1.7; color: #2a2a2a; background:#f6f8fb; }
-    h2.colorlib-heading { font-family: 'Playfair Display', serif; color:#1f2d3d; font-size:36px; font-weight:700; text-align:center; margin-bottom:40px; }
-    .author-img{ width:180px; height:180px; border-radius:50%; background-size:cover!important; background-position:center top!important; margin:0 auto 15px; }
-    #navbar ul li.active a{ color:#2563eb; font-weight:700; }
-
-    /* Layout polish */
-    .onpage-nav { text-align:center; margin-bottom:18px; }
-    .onpage-nav a{ margin:0 8px; color:#2563eb; text-decoration:none; }
-    .onpage-nav a:hover{ text-decoration:underline; }
-
-    .section-intro { font-size:17px; color:#344054; }
-
-    .project-card{
-      background:#fff; border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,.08);
-      padding:26px; margin:22px 0; transition:box-shadow .2s ease;
+    body {
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f4f7f6;
     }
-    .project-card:hover{ box-shadow:0 14px 36px rgba(2,6,23,.12); }
-    .project-card h4{ margin-top:0; font-size:22px; color:#0f172a; }
-    .project-card p, .project-card li{ font-size:15.5px; color:#3b3b3b; }
 
-    /* Figure handling: crisp, never upscale */
-    .figure-wrap{ margin:14px auto; }
-    .img-frame{ border:1px solid #e5e7eb; border-radius:12px; background:#fafafa; overflow:hidden; }
-    .figure-wrap img{ display:block; width:auto; max-width:100%; height:auto; margin:0 auto; }
-    figcaption{ text-align:center; font-size:.95em; color:#6b7280; margin-top:8px; }
+    h2.colorlib-heading {
+      font-family: 'Playfair Display', serif;
+      color: #2d3e50;
+      font-size: 36px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 50px;
+    }
 
-    /* Two-column align on desktop */
-    @media (min-width: 992px){ .vcenter{ display:flex; align-items:flex-start; gap:24px; } }
+    .project-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+      transition: all 0.3s ease-in-out;
+    }
 
-    .back-to-top{ display:inline-block; margin-top:6px; font-size:.9em; color:#2563eb; }
-    .back-to-top:hover{ text-decoration:underline; }
+    .project-card:hover {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card h4 {
+      font-size: 28px;
+      margin-top: 0;
+      color: #2d3e50;
+    }
+
+    .project-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .figure-wrap {
+      max-width: 100%;
+      margin: 20px 0;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .figure-wrap img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+      /* no width:100% -> prevents upscaling */
+    }
+
+    .figure-wrap img:hover {
+      transform: scale(1.05);
+    }
+
+    .onpage-nav a {
+      margin-right: 12px;
+      text-decoration: none;
+      color: #3498db;
+    }
+
+    .onpage-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #3498db;
+    }
+
+    .back-to-top:hover {
+      text-decoration: underline;
+    }
+
+    .lead-intro {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .navbar {
+      margin-top: 40px;
+    }
+
+    /* Enhance navbar appearance */
+    #navbar ul li a {
+      color: #3498db;
+      font-weight: 500;
+    }
+
+    #navbar ul li a:hover {
+      color: #2980b9;
+    }
+
+    .navbar ul li.active a {
+      color: #2d3e50;
+      font-weight: 600;
+    }
+
+    .vcenter {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .vcenter {
+        flex-direction: column;
+      }
+    }
   </style>
 
   <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
+
   <div id="colorlib-page">
     <div class="container-wrap">
 
@@ -60,7 +149,7 @@
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
           <a href="Images/Profile.png" target="_blank" rel="noopener">
-            <div class="author-img" style="background-image:url('Images/Profile.png');"></div>
+            <div class="author-img" style="background-image: url('Images/Profile.png');"></div>
           </a>
           <h1 id="colorlib-logo"><a href="index.html">Koorosh Azizi</a></h1>
           <span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span>
@@ -93,26 +182,27 @@
                 <p class="onpage-nav">
                   <strong>On this page:</strong>
                   <a href="#overview">Overview</a> ·
-                  <a href="#line1">Line&nbsp;1</a> ·
-                  <a href="#line2">Line&nbsp;2</a> ·
-                  <a href="#line3">Line&nbsp;3</a>
+                  <a href="#line1">Community-Engaged Urban Climate Resilience</a> ·
+                  <a href="#line2">Sustainability Transitions in Urban Environmental Systems</a> ·
+                  <a href="#line3">Coupled Human–Environment Modeling and Spatial Analysis</a>
                 </p>
 
                 <!-- ===================== Overview ===================== -->
                 <article id="overview" class="anchor">
                   <h3>Research Overview</h3>
-                  <p class="section-intro">
+                  <p class="lead-intro">
                     Climate risks are wicked problems. They arise from interacting environmental, social, cultural, institutional, historical, and economic forces, and they do not yield to single-discipline solutions. My research bridges theory and practice in climate risk and socioecological systems by integrating process-based hydrologic modeling, geospatial statistics, remote sensing, and agent-based simulation, grounded in community-based participatory research. This approach lets me trace feedbacks among hydroclimatic extremes, the built environment, and human behavior; analyze governance and risk perceptions that shape coordination; and produce decision tools for just and sustainable adaptation from neighborhood to national scales. Trained in hydrological science, water resources management, and mathematical modeling, and collaborating across geography, planning, social science, and sustainability, I explain past change, test plausible futures, and identify leverage points that reduce risk while advancing equity.
                   </p>
                 </article>
 
                 <hr>
 
-                <!-- ===================== LINE 1 ===================== -->
+                <!-- ===================== Community-Engaged Urban Climate Resilience ===================== -->
                 <article id="line1" class="anchor">
                   <h3>1) Community-Engaged Urban Climate Resilience</h3>
-                  <p class="section-intro"><strong>Objective.</strong> Co-produce actionable knowledge and multi-scale evidence with residents and partners that aligns lived experience with hydrologic and spatial analysis, builds shared capacity, and converts insight into plans and policies that strengthen climate resilience.</p>
+                  <p><strong>Objective:</strong> Co-produce actionable knowledge and multi-scale evidence with residents and partners that aligns lived experience with hydrologic and spatial analysis, builds shared capacity, and converts insight into plans and policies that strengthen climate resilience.</p>
 
+                  <!-- Community-based approaches to UPF -->
                   <div class="project-card">
                     <h4>Community-based approaches to urban pluvial flooding (UPF)</h4>
                     <div class="row vcenter">
@@ -121,63 +211,52 @@
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/UPF%20Research%20Trend.png" target="_blank" rel="noopener">
+                          <a href="Images/UPF%20Research%20Trend.png" target="_blank" rel="noopener">
                             <img loading="lazy" decoding="async" src="Images/UPF%20Research%20Trend.png" alt="Trends in community-based UPF research">
                           </a>
-                          <figcaption><strong>Fig. 1.</strong> Community-based UPF research trends.</figcaption>
+                          <figcaption><strong>Fig. 1.</strong> Trends in community-based UPF research (Azizi et al., 2022).</figcaption>
                         </figure>
                       </div>
                     </div>
 
-                    <div class="row vcenter">
-                      <div class="col-md-7">
-                        <p>As a case study, Azizi et&nbsp;al. (2023) engaged residents in Germantown, Tennessee, after a major 2019 flood. By combining hydrologic–hydrodynamic modeling with multi-level community-based data collection, the project improved the basin model and fostered two-way learning, strengthening residents’ understanding of their own risks.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Water%20Alternative.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Water%20Alternative.png" alt="Participatory UPF methodology and modeled flood extent">
-                          </a>
-                          <figcaption><strong>Fig. 2.</strong> Participatory UPF methodology &amp; modeled extent (June&nbsp;7, 2019).</figcaption>
-                        </figure>
-                      </div>
-                    </div>
+                    <p>As a case study, Azizi et al. (2023) engaged residents in Germantown, Tennessee, after a major 2019 flood. By combining hydrologic–hydrodynamic modeling with multi-level community-based data collection, the project improved the basin model and fostered two-way learning, strengthening residents’ understanding of their own risks.</p>
 
-                    <div class="row vcenter">
-                      <div class="col-md-7">
-                        <p><strong>Timing matters.</strong> Residents are often more responsive shortly after a flood, while proactive engagement is needed where recent events are absent.</p>
-                      </div>
-                      <div class="col-md-5">
-                        <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Typology_Citizen%20Science.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Typology_Citizen%20Science.png" alt="Engagement timing framework">
-                          </a>
-                          <figcaption><strong>Fig. 3.</strong> Engagement framework: before vs. after extreme events.</figcaption>
-                        </figure>
-                      </div>
-                    </div>
+                    <figure class="figure-wrap">
+                      <a href="Images/Water%20Alternative.png" target="_blank" rel="noopener">
+                        <img loading="lazy" decoding="async" src="Images/Water%20Alternative.png" alt="Participatory UPF methodology and modeled flood extent, June 7, 2019">
+                      </a>
+                      <figcaption><strong>Fig. 2.</strong> Participatory UPF methodology and modeled flood extent for the June 7, 2019 event (Azizi et al., 2023).</figcaption>
+                    </figure>
+
+                    <p><strong>Timing matters:</strong> Residents are often more responsive shortly after a flood, while proactive engagement is needed where recent events are absent.</p>
+
+                    <figure class="figure-wrap">
+                      <a href="Images/Typology_Citizen%20Science.png" target="_blank" rel="noopener">
+                        <img loading="lazy" decoding="async" src="Images/Typology_Citizen%20Science.png" alt="Engagement framework for outreach timing">
+                      </a>
+                      <figcaption><strong>Fig. 3.</strong> Engagement framework for outreach before vs after an extreme event.</figcaption>
+                    </figure>
                   </div>
 
+                  <hr>
+
+                  <!-- Project CRESSLE -->
                   <div class="project-card">
                     <h4>Project CRESSLE (Community Resilience integrated into an Earth System Science Learning Ecosystem)</h4>
-                    <div class="row vcenter">
-                      <div class="col-md-7">
-                        <p>This project partners UT researchers with Austin neighborhoods to assess community needs and build a community of practice that designs and implements community-driven research on resilience and sustainability. Research is organized around four themes: Water Resources, Climate Resilience, Communities and Land Use, and Air Quality.</p>
-                        <ul>
-                          <li>Assessing community exposure to climate impacts (heat &amp; rainfall) as functions of atmospheric forcing, geography, and land cover.</li>
-                          <li>Analyzing social vulnerability to understand disproportionate impacts across the city.</li>
-                          <li>Integrating downscaled geophysical data with social indicators of resilience to evaluate solutions.</li>
-                        </ul>
-                      </div>
-                      <div class="col-md-5">
-                        <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Cressle.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Cressle.png" alt="CRESSLE community of practice">
-                          </a>
-                          <figcaption><strong>Fig. 4.</strong> CRESSLE Community of Practice.</figcaption>
-                        </figure>
-                      </div>
-                    </div>
+                    <p>This project partners UT researchers with Austin neighborhoods to assess community needs and build a community of practice that designs and implements community-driven research on resilience and sustainability. Research is organized around four themes: Water Resources, Climate Resilience, Communities and Land Use, and Air Quality.</p>
+                    <p><strong>My focus:</strong> climate resilience with projects addressing two major urban challenges: extreme heat and extreme precipitation and flooding. Key elements include:</p>
+                    <ul>
+                      <li>Assessing community exposure to climate impacts, such as heat and rainfall, as functions of atmospheric forcing, geography, and land cover.</li>
+                      <li>Analyzing social vulnerability to understand how similar climate drivers produce disproportionate impacts across the city.</li>
+                      <li>Investigating strategic solutions by integrating downscaled geophysical data with social indicators of community resilience.</li>
+                    </ul>
+
+                    <figure class="figure-wrap">
+                      <a href="Images/Cressle.png" target="_blank" rel="noopener">
+                        <img loading="lazy" decoding="async" src="Images/Cressle.png" alt="CRESSLE community of practice">
+                      </a>
+                      <figcaption><strong>Fig. 4.</strong> CRESSLE Community of Practice.</figcaption>
+                    </figure>
                   </div>
 
                   <a class="back-to-top" href="#colorlib-main">↑ Back to top</a>
@@ -185,21 +264,21 @@
 
                 <hr>
 
-                <!-- ===================== LINE 2 ===================== -->
+                <!-- ===================== Line 2 ===================== -->
                 <article id="line2" class="anchor">
                   <h3>2) Sustainability Transitions in Urban Environmental Systems</h3>
-                  <p class="section-intro"><strong>Objective.</strong> Study just and sustainable transition pathways by linking system-dynamics and geospatial analytics to address vulnerability, and use this information to design risk management strategies that are scientifically sound, technologically feasible, economically efficient, and ethically defensible.</p>
+                  <p><strong>Objective:</strong> Study just and sustainable transition pathways by linking system-dynamics and geospatial analytics to address vulnerability, and use this information to design risk management strategies that are scientifically sound, technologically feasible, economically efficient, and ethically defensible.</p>
 
                   <div class="project-card">
                     <h4>Water Resources Management and Water Conservation</h4>
                     <div class="row vcenter">
                       <div class="col-md-7">
-                        <p>This research examines how urban water systems perform under short- and long-term stressors and how policy choices shape equity and affordability. I conducted a comparative study of 16 large U.S. water utilities, building system-dynamics models that capture feedbacks among supply, demand, infrastructure, finance, and service reliability. Using qualitative comparative analysis, I identified configurations of environmental, institutional, social, and financial attributes that support both affordability and quality, and showed that adaptive institutions and proactive infrastructure often emerge where biophysical challenges are most severe (Azizi et&nbsp;al., 2023).</p>
+                        <p>This research examines how urban water systems perform under short- and long-term stressors and how policy choices shape equity and affordability. I conducted a comparative study of 16 large U.S. water utilities, building system-dynamics models that capture feedbacks among supply, demand, infrastructure, finance, and service reliability. Using qualitative comparative analysis, I identified configurations of environmental, institutional, social, and financial attributes that support both affordability and quality, and showed that adaptive institutions and proactive infrastructure often emerge where biophysical challenges are most severe (Azizi et al., 2023).</p>
                         <p><em>Figure&nbsp;5.</em> Nonnegative matrix factorization of conditions and cases using two components. Dotted lines indicate condition vectors; points represent utility cases.</p>
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/NNMF.png" target="_blank" rel="noopener">
+                          <a href="Images/NNMF.png" target="_blank" rel="noopener">
                             <img loading="lazy" decoding="async" src="Images/NNMF.png" alt="NNMF components: conditions and cases">
                           </a>
                           <figcaption><strong>Fig. 5.</strong> NNMF (two components).</figcaption>
@@ -209,13 +288,13 @@
 
                     <div class="row vcenter">
                       <div class="col-md-7">
-                        <p>Building on this systems view, I evaluated conservation programs with spatial and statistical analysis. In Miami-Dade County, a high-efficiency toilet rebate program reduced demand in high-consumption areas but disproportionately benefited higher-income households, raising distributional concerns (Azizi et&nbsp;al., 2025). A follow-up study in the Las Vegas Valley Water District evaluated conservation portfolios under dual objectives of maximizing water savings and improving affordability. Results revealed trade-offs, with water savings strategies favoring higher-income neighborhoods and affordability-focused policies shifting resources toward disadvantaged communities, as well as synergies when both objectives are integrated (Azizi et&nbsp;al., 2024).</p>
-                        <p><em>Figure&nbsp;6.</em> Pareto frontier between maximum water savings and maximum water affordability under a fixed budget.</p>
+                        <p>Building on this systems view, I evaluated conservation programs with spatial and statistical analysis. In Miami-Dade County, a high-efficiency toilet rebate program reduced demand in high-consumption areas but disproportionately benefited higher-income households, raising distributional concerns (Azizi et al., 2025). A follow-up study in the Las Vegas Valley Water District evaluated conservation portfolios under dual objectives of maximizing water savings and improving affordability. Results revealed trade-offs, with water savings strategies favoring higher-income neighborhoods and affordability-focused policies shifting resources toward disadvantaged communities, as well as synergies when both objectives are integrated (Azizi et al., 2024).</p>
+                        <p><em>Figure&nbsp;6.</em> Pareto frontier between maximum water savings and maximum water affordability under a fixed budget. Segments near the top-left prioritize affordability; segments near the bottom-right prioritize water savings.</p>
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Trade%20off.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Trade%20off.png" alt="Pareto frontier trade-off between savings and affordability">
+                          <a href="Images/Trade%20off.png" target="_blank" rel="noopener">
+                            <img loading="lazy" decoding="async" src="Images/Trade%20off.png" alt="Pareto frontier trade-off curve between savings and affordability">
                           </a>
                           <figcaption><strong>Fig. 6.</strong> Pareto frontier of savings vs. affordability.</figcaption>
                         </figure>
@@ -226,7 +305,7 @@
                   </div>
 
                   <div class="project-card">
-                    <h4>Multi-Sectoral Insights into U.S. Gulf Coast Flood Governance &amp; Social Network Analysis</h4>
+                    <h4>Multi-Sectoral Insights into U.S. Gulf Coast Flood Governance and Social Network Analysis</h4>
                     <div class="row vcenter">
                       <div class="col-md-7">
                         <p>This project investigates how diverse actors understand and collaborate on flood resilience along the U.S. Gulf Coast. In Jefferson County, Texas, and Baldwin County, Alabama, we combined stakeholder interviews with Fuzzy Cognitive Mapping (FCM) to capture competing governance frames: a technical infrastructure focus held mainly by government and industry, and an equity-oriented view advanced by nonprofits. Misalignment between these frames creates collaboration gaps and fragmented risk reduction.</p>
@@ -234,8 +313,8 @@
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Thematic%20mapping.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Thematic%20mapping.png" alt="Mixed-methods workflow / thematic mapping">
+                          <a href="Images/Thematic%20mapping.png" target="_blank" rel="noopener">
+                            <img loading="lazy" decoding="async" src="Images/Thematic%20mapping.png" alt="Mixed-methods workflow / thematic mapping pipeline">
                           </a>
                           <figcaption><strong>Fig. 7.</strong> Mixed-methods pipeline from narratives to mapping.</figcaption>
                         </figure>
@@ -249,10 +328,10 @@
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Flood%20vulnerability%20themes.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Flood%20vulnerability%20themes.png" alt="Stakeholder-identified drivers, issues, and interventions">
+                          <a href="Images/Flood%20vulnerability%20themes.png" target="_blank" rel="noopener">
+                            <img loading="lazy" decoding="async" src="Images/Flood%20vulnerability%20themes.png" alt="Thematic map of flood drivers, issues, and interventions">
                           </a>
-                          <figcaption><strong>Fig. 8.</strong> Drivers, issues, interventions.</figcaption>
+                          <figcaption><strong>Fig. 8.</strong> Stakeholder-identified drivers, issues, interventions.</figcaption>
                         </figure>
                       </div>
                     </div>
@@ -263,10 +342,10 @@
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/Network.png" target="_blank" rel="noopener">
-                            <img loading="lazy" decoding="async" src="Images/Network.png" alt="Inter-organizational collaboration network">
+                          <a href="Images/Network.png" target="_blank" rel="noopener">
+                            <img loading="lazy" decoding="async" src="Images/Network.png" alt="Flood governance collaboration network graph">
                           </a>
-                          <figcaption><strong>Fig. 9.</strong> Collaboration network.</figcaption>
+                          <figcaption><strong>Fig. 9.</strong> Inter-organizational collaboration network.</figcaption>
                         </figure>
                       </div>
                     </div>
@@ -279,24 +358,24 @@
 
                 <hr>
 
-                <!-- ===================== LINE 3 ===================== -->
+                <!-- ===================== Line 3 ===================== -->
                 <article id="line3" class="anchor">
                   <h3>3) Coupled Human–Environment Modeling and Spatial Analysis</h3>
-                  <p class="section-intro"><strong>Objective.</strong> Integrate mixed-methods data and built-environment information into dynamical and spatial-network models that analyze and predict human–environment interaction, map sustainable pathways, and optimize policy targeting so that resource management and hazard mitigation scale equitably.</p>
+                  <p><strong>Objective:</strong> Integrate mixed-methods data and built-environment information into dynamical and spatial-network models that analyze and predict human–environment interaction, map sustainable pathways, and optimize policy targeting so that resource management and hazard mitigation scale equitably.</p>
 
                   <div class="project-card">
-                    <h4>Socio-Behavioral &amp; Spatial Dynamics in Green Stormwater Infrastructure (GSI) Adoption</h4>
+                    <h4>Socio-Behavioral and Spatial Dynamics in Green Stormwater Infrastructure (GSI) Adoption</h4>
                     <div class="row vcenter">
                       <div class="col-md-7">
-                        <p>Urban stormwater systems face growing stress from extreme weather and rapid urbanization, yet GSI adoption remains uneven. To address the socio-behavioral gap, I integrate empirical surveys, structural equation modeling, and agent-based modeling in the Austin, Texas region. Household survey data on personal norms, awareness, attitudes, and social capital are coupled with parcel-level hydrologic and spatial attributes to parameterize an ABM of GSI diffusion (Azizi et&nbsp;al., 2025, under revision).</p>
+                        <p>Urban stormwater systems face growing stress from extreme weather and rapid urbanization, yet GSI adoption remains uneven. To address the socio-behavioral gap, I integrate empirical surveys, structural equation modeling, and agent-based modeling in the Austin, Texas region. Household survey data on personal norms, awareness, attitudes, and social capital are coupled with parcel-level hydrologic and spatial attributes to parameterize an ABM of GSI diffusion (Azizi et al., 2025, under revision).</p>
                         <p><em>Figure&nbsp;10.</em> ABM framework for GSI adoption. Hexagons indicate data sources and inputs; rectangles indicate processes. Color-coded boundaries mark Household Agents, Social Interactions, Behavioral Evolution, and Adoption Decision Rules.</p>
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/ABM%20Framwork.png" target="_blank" rel="noopener">
+                          <a href="Images/ABM%20Framwork.png" target="_blank" rel="noopener">
                             <img loading="lazy" decoding="async" src="Images/ABM%20Framwork.png" alt="ABM framework for GSI adoption">
                           </a>
-                          <figcaption><strong>Fig. 10.</strong> ABM framework and components.</figcaption>
+                          <figcaption><strong>Fig. 10.</strong> ABM framework components.</figcaption>
                         </figure>
                       </div>
                     </div>
@@ -308,7 +387,7 @@
                       </div>
                       <div class="col-md-5">
                         <figure class="figure-wrap">
-                          <a class="img-frame" href="Images/ABM%20Traj.png" target="_blank" rel="noopener">
+                          <a href="Images/ABM%20Traj.png" target="_blank" rel="noopener">
                             <img loading="lazy" decoding="async" src="Images/ABM%20Traj.png" alt="Adoption trajectories and baselines across districts">
                           </a>
                           <figcaption><strong>Fig. 11.</strong> Adoption trajectories &amp; baselines.</figcaption>
@@ -316,7 +395,7 @@
                       </div>
                     </div>
 
-                    <p>Building on this foundation, I study how adaptation preferences evolve along spatial gradients of flood exposure. I develop survey-informed ABMs and distance-weighted exposure indices to identify tipping points for collective action, then translate those dynamics into regime maps and early-warning signals that align policy design with place-based risk. In a complementary line of work, I test procedural justice in GSI funding by embedding participatory budgeting alongside conventional first-come, first-served rebate programs to evaluate when community decision rules better support high-risk, low-income households (Azizi et&nbsp;al., 2026, in preparation).</p>
+                    <p>Building on this foundation, I study how adaptation preferences evolve along spatial gradients of flood exposure. I develop survey-informed ABMs and distance-weighted exposure indices to identify tipping points for collective action, then translate those dynamics into regime maps and early-warning signals that align policy design with place-based risk. In a complementary line of work, I test procedural justice in GSI funding by embedding participatory budgeting alongside conventional first-come, first-served rebate programs to evaluate when community decision rules better support high-risk, low-income households (Azizi et al., 2026, in preparation).</p>
 
                     <p>Together, these efforts link human behavior to physical risk and provide transferable tools for equitable, community-centered adaptation in urban stormwater management.</p>
                   </div>
