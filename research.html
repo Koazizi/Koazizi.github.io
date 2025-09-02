@@ -6,6 +6,8 @@
   <title>Research – Koorosh Azizi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Fonts & CSS from your theme -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
@@ -17,17 +19,34 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
+
   <style>
     .author-img { width:180px; height:180px; border-radius:50%; background-size:cover!important; background-position:center top!important; margin:0 auto 15px; }
     #navbar ul li.active a { color:#3498db; font-weight:700; }
-    figure { margin: 22px auto; }
-    figure img { width: 100%; height: auto; }
-    figcaption { font-size: 0.95em; color: #6b6b6b; text-align: center; margin-top: 8px; }
+
+    /* Page-specific enhancements */
     .lead-intro { font-size: 1.05em; }
     .anchor { scroll-margin-top: 90px; }
-    .ref-list { font-size: 0.98em; }
-    .back-to-top { display:inline-block; margin-top:6px; font-size:0.9em; }
+    .onpage-nav a { margin-right: 12px; }
+    .project-card {
+      background:#fff; border-radius:14px; box-shadow:0 12px 24px rgba(0,0,0,.06);
+      padding:24px; margin:18px 0;
+    }
+    .project-card h4 { margin-top:0; }
+    .figure-wrap { margin:16px auto; max-width: 1100px; }
+    .figure-wrap .img-frame {
+      border:1px solid #eee; border-radius:12px; overflow:hidden; background:#fafafa;
+    }
+    /* Prevent upscaling, allow shrinking on small screens */
+    .figure-wrap img { display:block; width:auto; max-width:100%; height:auto; margin:0 auto; }
+    figcaption { font-size:.95em; color:#6b6b6b; text-align:center; margin-top:8px; }
+    .ref-list { font-size:.98em; }
+    .back-to-top { display:inline-block; margin-top:6px; font-size:.9em; }
+    @media (min-width: 992px){
+      .vcenter { display:flex; align-items:flex-start; gap:22px; }
+    }
   </style>
+
   <script src="js/modernizr-2.6.2.min.js"></script>
   <!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
 </head>
@@ -38,8 +57,8 @@
       <!-- SIDEBAR -->
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
-          <a href="images/Profile.png" target="_blank" rel="noopener">
-            <div class="author-img" style="background-image: url('images/Profile.png');"></div>
+          <a href="Images/Profile.png" target="_blank" rel="noopener">
+            <div class="author-img" style="background-image: url('Images/Profile.png');"></div>
           </a>
           <h1 id="colorlib-logo"><a href="index.html">Koorosh Azizi</a></h1>
           <span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span>
@@ -68,51 +87,115 @@
               <div class="col-md-10 col-md-offset-1">
                 <h2 class="colorlib-heading">RESEARCH</h2>
 
-                <p><strong>On this page:</strong>
-                  <a href="#ceucr">Community-Engaged Urban Climate Resilience</a>
+                <!-- On-page quick nav -->
+                <p class="onpage-nav">
+                  <strong>On this page:</strong>
+                  <a href="#line1">Line 1: Community-Engaged Urban Climate Resilience</a>
                   · <a href="#refs">References</a>
                 </p>
 
-                <!-- 1) Community-Engaged Urban Climate Resilience -->
-                <article id="ceucr" class="anchor research-section">
-                  <h3>1. Community-Engaged Urban Climate Resilience</h3>
-                  <p class="lead-intro">The primary objective is to co-produce actionable knowledge and multi-scale evidence with residents and partners that aligns lived experience with hydrologic and spatial analysis, builds shared capacity, and converts insight into plans and policies that strengthen small- and large-scale climate resilience.</p>
+                <!-- ===================================================== -->
+                <!-- LINE 1 -->
+                <article id="line1" class="anchor">
+                  <h3>Line 1: Community-Engaged Urban Climate Resilience</h3>
+                  <p class="lead-intro">
+                    The primary objective is to co-produce actionable knowledge and multi-scale evidence with residents and partners that aligns lived experience with hydrologic and spatial analysis, builds shared capacity, and converts insight into plans and policies that strengthen small- and large-scale climate resilience.
+                  </p>
 
-                  <h4>Community-based approaches to UPF research</h4>
-                  <p>In my PhD research, I explored ways of engaging residents when dealing with urban pluvial flooding (UPF). Reviewing community-based approaches to UPF, Azizi et&nbsp;al. (2022) argue that typical multi-disciplinary frameworks are not able to fully capture its multi-dimensional complexity as a socio-environmental system. A common shortcoming is that, in many cases, studies are conceived as a one-way process, with residents involved only (or mostly) in collecting data for the “flooding experts.” This low level of engagement affords little opportunities for a deeper, collective learning process, which could effect changes to inveterate power structures and decision-making/funding processes.</p>
-                  <p>Another gap identified in Azizi et&nbsp;al. (2022) is that little has been done in terms of incorporating residents’ knowledge in the development/improvement of urban flood models, which could be especially relevant in sectors with limited data availability for hydrodynamic modeling. A criticism of some of the “green approaches” is their focus on high-tech, proprietary innovations that are not applicable to low-resourced contexts.</p>
-                  <p>As a result, it is proposed that a new paradigmatic shift is needed that accounts not only for the technical/scientific aspects, but also for the interacting political, social, and economic conditions that drive UPF locally. This recognizes that our capacity to tackle UPF hinges on individual behaviors and decision-making, which in turn depend on formal and informal power structures. In any given neighborhood, the risk of UPF as well as the likely range of interventions correlate with the community’s capacity to mobilize and effect actions. We can foster these by involving residents at all stages of the UPF issue, from problem definition to management, and by increasing their knowledge about UPF, while also incorporating their previous flooding experiences as well as their needs when assessing and responding to this issue. Fig.&nbsp;1 summarizes the review by Azizi et&nbsp;al. (2022).</p>
+                  <!-- Project A -->
+                  <div id="project-upf" class="project-card anchor">
+                    <h4>Project: Community-based approaches to Urban Pluvial Flooding (UPF) research</h4>
+                    <div class="row vcenter">
+                      <div class="col-md-7">
+                        <p>
+                          In my PhD research, I examined how residents can be more meaningfully engaged in addressing UPF. Azizi et&nbsp;al. (2022) highlight that many multi-disciplinary approaches treat residents mainly as data collectors, missing opportunities for reciprocal learning and overlooking their knowledge in improving flood models. We argued that effective UPF research must integrate technical analysis with social, political, and economic realities at the community level.
+                        </p>
+                        <p>Figure&nbsp;1 summarizes trends in community-based UPF research (Azizi et&nbsp;al., 2022).</p>
+                      </div>
+                      <div class="col-md-5">
+                        <figure class="figure-wrap">
+                          <a class="img-frame" href="Images/UPF%20Research%20Trend.png" target="_blank" rel="noopener">
+                            <img class="img-responsive" loading="lazy" decoding="async"
+                                 src="Images/UPF%20Research%20Trend.png"
+                                 alt="Trends in community-based UPF research (Azizi et al., 2022)">
+                          </a>
+                          <figcaption><strong>Fig. 1.</strong> Trends in community-based UPF research (Azizi et&nbsp;al., 2022).</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-                  <figure id="fig1">
-                    <a href="Images/UPF%20Research%20Trend.png" target="_blank" rel="noopener">
-                      <img src="Images/UPF%20Research%20Trend.png" alt="Conceptualization of trends in community-based UPF research">
-                    </a>
-                    <figcaption><strong>Fig. 1.</strong> Conceptualization of trends in community-based UPF research (from Azizi et&nbsp;al., 2022).</figcaption>
-                  </figure>
+                    <div class="row vcenter">
+                      <div class="col-md-7">
+                        <p>
+                          As a case study, Azizi et&nbsp;al. (2023) engaged residents in Germantown, Tennessee, after a major 2019 flood. By combining hydrologic–hydrodynamic modeling with multi-level community-based data collection, the project both improved the flood model and fostered two-way learning, strengthening residents’ understanding of their own risks.
+                        </p>
+                        <p>Figure&nbsp;2 illustrates the participatory UPF methodology and the modeled flooding extent for the June&nbsp;7, 2019 event.</p>
+                      </div>
+                      <div class="col-md-5">
+                        <figure class="figure-wrap">
+                          <a class="img-frame" href="Images/Water%20Alternative.png" target="_blank" rel="noopener">
+                            <img class="img-responsive" loading="lazy" decoding="async"
+                                 src="Images/Water%20Alternative.png"
+                                 alt="Participatory UPF methodology and modeled flooding extent (June 7, 2019)">
+                          </a>
+                          <figcaption><strong>Fig. 2.</strong> Participatory UPF methodology and flooding extent for June&nbsp;7, 2019 (Azizi et&nbsp;al., 2023).</figcaption>
+                        </figure>
+                      </div>
+                    </div>
 
-                  <p>As an example of a participatory UPF methodology, Azizi et&nbsp;al. (2023) engaged residents from Germantown, a suburban city in Tennessee that suffered a serious flooding event in 2019. A hydrologic–hydrodynamic modeling exercise was integrated with community-based data collection at three levels of engagement (Fig.&nbsp;2), with the goals of (i) addressing data gaps in a flooding model, (ii) engaging neighbors in a reciprocal learning process, (iii) improving UPF modeling, and (iv) enhancing residents’ understanding of their own flooding risk. Qualitative, community-based observations helped improve the basin model, while the deeper, multi-level engagement process allowed for bi-directional learning, resulting in enhanced UPF resilience.</p>
+                    <div class="row vcenter">
+                      <div class="col-md-7">
+                        <p>
+                          Our work also showed that the timing of engagement matters. Residents are often more responsive shortly after a flood, while proactive engagement is needed in places without recent events. Figure&nbsp;3 presents a framework for tailoring engagement based on whether outreach occurs before or after an extreme event.
+                        </p>
+                        <p>
+                          While challenges remain—such as sustaining participation and reaching a critical mass of residents—the findings demonstrate that citizen science can reduce data gaps and enhance local resilience in diverse contexts.
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <figure class="figure-wrap">
+                          <a class="img-frame" href="Images/Typology_Citizen%20Science.png" target="_blank" rel="noopener">
+                            <img class="img-responsive" loading="lazy" decoding="async"
+                                 src="Images/Typology_Citizen%20Science.png"
+                                 alt="Engagement timing framework: before vs after an extreme event">
+                          </a>
+                          <figcaption><strong>Fig. 3.</strong> Engagement process tailored to timing (before vs. after an extreme event).</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
 
-                  <figure id="fig2">
-                    <a href="Images/Water%20Alternative.png" target="_blank" rel="noopener">
-                      <img src="Images/Water%20Alternative.png" alt="Participatory UPF methodology and mapped flooding extent for June 7, 2019 event in Germantown, TN">
-                    </a>
-                    <figcaption><strong>Fig. 2.</strong> The participatory UPF modelling methodology (left) and flooding extent for the 7&nbsp;June&nbsp;2019 rainfall event, as determined by the preliminary model (right) (from Azizi et&nbsp;al., 2023).</figcaption>
-                  </figure>
-
-                  <p>The effective application of citizen-science approaches to address current issues in UPF research is a challenging task. In this study, we approached several of these challenges with a systematic, multi-phase community-engagement process that collected detailed residents’ observations of UPF variables of interest. Even though the results were case-specific, the methodology is transferable to other localities and could be effectively applied in various contexts. However, each case will have its own unique characteristics that need to be considered.</p>
-                  <p>One specific issue that should be considered when applying our approach is <em>timing</em>: engagement can occur after an extreme event has already occurred locally or when it has not occurred (yet). This factor can significantly alter how research should proceed as well as the initial level of interest from residents. As proposed in Fig.&nbsp;3, when reaching out to residents after an extreme event, they might be more willing to participate in the research in general—and data collection in particular—while the impacts and fresh memories of a recent flood are still lingering. This provides an opportunity to start with a lower level of engagement (as performed in this study) and increase it as the research process progresses. In our case, the past event provided a focal point to initiate the conversation with residents.</p>
-
-                  <figure id="fig3">
-                    <a href="Images/Typology_Citizen%20Science.png" target="_blank" rel="noopener">
-                      <img src="Images/Typology_Citizen%20Science.png" alt="Engagement process with the community based on study timing: before vs after an extreme event">
-                    </a>
-                    <figcaption><strong>Fig. 3.</strong> Engagement process with the community based on the timing of the study, i.e., whether reaching out to residents before (red) or after (blue) an extreme event has happened in the neighborhood.</figcaption>
-                  </figure>
-
-                  <p>When the research involves a locality where no large flood has occurred yet (according to local memory), it becomes much more important to establish a high level of engagement from the beginning and maintain it through the process. To motivate people, engagement processes should highlight the importance of UPF, bringing it to their attention—e.g., noting recent UPF events in nearby locations. Citizen participation and motivation are primary requirements for citizen-science programs to succeed. The most significant challenge we faced when applying our proposed methodology was accessing a sufficiently large number of residents and engaging them across the data-collection phases. These are vital aspects when attempting to effect meaningful impacts on rainfall–runoff modelling over larger catchments. One option to increase participation and willingness is to engage local organizations and work with community leaders. This can improve acceptance of the project and enable researchers to reach larger numbers of residents.</p>
+                  <!-- Project B -->
+                  <div id="project-cressle" class="project-card anchor">
+                    <h4>Project CRESSLE — Community Resilience integrated into an Earth System Science Learning Ecosystem</h4>
+                    <div class="row vcenter">
+                      <div class="col-md-7">
+                        <p>
+                          This project partners UT researchers with Austin neighborhoods to assess community needs and establish a community of practice that designs and implements community-driven research projects on resilience and sustainability challenges. Research is organized around four themes: Water Resources, Climate Resilience, Communities and Land Use, and Air Quality.
+                        </p>
+                        <p><strong>My focus:</strong> climate resilience, addressing two major urban challenges—extreme heat and extreme precipitation/flooding. Key elements include:</p>
+                        <ol>
+                          <li>Assessing community exposure to climate impacts (heat and rainfall) as functions of atmospheric forcing, geography, and land cover.</li>
+                          <li>Analyzing social vulnerability to understand how identical drivers produce disproportionate impacts across urban areas.</li>
+                          <li>Investigating strategic solutions by integrating downscaled geophysical data with social indicators of community resilience.</li>
+                        </ol>
+                      </div>
+                      <div class="col-md-5">
+                        <figure class="figure-wrap">
+                          <a class="img-frame" href="Images/Cressle.png" target="_blank" rel="noopener">
+                            <img class="img-responsive" loading="lazy" decoding="async"
+                                 src="Images/Cressle.png"
+                                 alt="CRESSLE community of practice diagram">
+                          </a>
+                          <figcaption><strong>Fig. 4.</strong> CRESSLE Community of Practice.</figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </div>
 
                   <a class="back-to-top" href="#colorlib-main">↑ Back to top</a>
                 </article>
+                <!-- ===================================================== -->
 
                 <hr>
 
@@ -120,10 +203,8 @@
                 <section id="refs" class="anchor">
                   <h4>References</h4>
                   <ol class="ref-list">
-                    <li>Azizi, K., <em>et&nbsp;al.</em> (2022). Review of community-based approaches to urban pluvial flooding (UPF) as a socio-environmental system.</li>
-                    <li>Azizi, K., <em>et&nbsp;al.</em> (2023). Participatory UPF methodology integrating hydrologic–hydrodynamic modelling with multi-level community engagement in Germantown, TN.</li>
-                    <li>Rotman, D., <em>et&nbsp;al.</em> (2012). Motivations affecting citizen-science participation.</li>
-                    <li>Sy, B., <em>et&nbsp;al.</em> (2019). Community leaders and organizational engagement to scale participation.</li>
+                    <li>Azizi, K., <em>et&nbsp;al.</em> (2022). Community-based approaches to urban pluvial flooding as a socio-environmental system.</li>
+                    <li>Azizi, K., <em>et&nbsp;al.</em> (2023). Participatory UPF methodology integrating hydrologic–hydrodynamic modelling with multi-level community engagement.</li>
                   </ol>
                   <a class="back-to-top" href="#colorlib-main">↑ Back to top</a>
                 </section>
