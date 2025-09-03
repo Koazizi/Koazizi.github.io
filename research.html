@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <style>
     :root{
@@ -23,24 +25,21 @@
       --shadow:0 10px 28px rgba(2,6,23,.08); --shadow-lg:0 14px 40px rgba(2,6,23,.12);
       --radius:14px;
       /* Wider single column to use the right space */
-      --content-w: 110ch; /* increase/decrease to taste (e.g., 104–120ch) */
+      --content-w: 110ch; /* adjust 100–120ch if you want */
     }
     html{scroll-behavior:smooth}
     body{font-family:'Poppins',sans-serif;line-height:1.7;color:var(--ink);background:var(--bg);}
 
+    /* Sidebar bits */
     .author-img{width:180px;height:180px;border-radius:50%;background-size:cover!important;background-position:center top!important;margin:0 auto 15px}
     #navbar ul li.active a{color:var(--brand);font-weight:700}
 
     /* Single wide content column */
-    .research-wrap{
-      max-width: var(--content-w);
-      margin: 0 auto;
-    }
+    .research-wrap{max-width:var(--content-w);margin:0 auto;}
 
     h2.colorlib-heading{
       font-family:'Playfair Display',serif; color:#0f172a;
-      font-size:36px; font-weight:700; text-align:center; margin:8px 0 10px;
-      letter-spacing:.02em;
+      font-size:36px; font-weight:700; text-align:center; margin:8px 0 10px; letter-spacing:.02em;
     }
 
     .quick-links{ text-align:center; margin:4px 0 24px; }
@@ -49,13 +48,8 @@
 
     /* Cards */
     .project-card{
-      background:var(--card);
-      border:1px solid var(--bd);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:26px;
-      margin:22px 0;
-      transition:box-shadow .2s ease;
+      background:var(--card); border:1px solid var(--bd); border-radius:var(--radius);
+      box-shadow:var(--shadow); padding:26px; margin:22px 0; transition:box-shadow .2s ease;
     }
     .project-card:hover{ box-shadow:var(--shadow-lg); }
     .project-card h3,.project-card h4{ margin-top:0; color:#0f172a; }
@@ -78,10 +72,7 @@
       overflow:hidden; box-shadow:0 1px 0 rgba(0,0,0,.02); cursor:zoom-in;
     }
     .img-frame img{
-      display:block;
-      width:auto;           /* prevents upscaling */
-      max-width:100%;       /* allows shrinking on small screens */
-      height:auto; margin:0 auto;
+      display:block; width:auto; max-width:100%; height:auto; margin:0 auto;
       transition:transform .22s ease;
     }
     .img-frame:hover img{ transform:scale(1.03); }
@@ -93,6 +84,12 @@
 
     .back-to-top{ display:inline-block; margin-top:8px; font-size:.92em; color:var(--brand); }
     .back-to-top:hover{ text-decoration:underline; }
+
+    /* Simple styling for sidebar social icons */
+    .social-media ul{list-style:none; padding:0; margin:12px 0;}
+    .social-media li{display:inline-block; margin:0 6px;}
+    .social-media a{color:#334155; font-size:18px;}
+    .social-media a:hover{color:var(--brand);}
   </style>
 
   <script src="js/modernizr-2.6.2.min.js"></script>
@@ -101,7 +98,7 @@
   <div id="colorlib-page">
     <div class="container-wrap">
 
-      <!-- SIDEBAR (unchanged) -->
+      <!-- SIDEBAR -->
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
           <a href="Images/Profile.png" target="_blank" rel="noopener">
@@ -109,7 +106,10 @@
           </a>
         </div>
         <h1 id="colorlib-logo" class="text-center"><a href="index.html">Koorosh Azizi</a></h1>
-        <div class="text-center"><span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span></div>
+        <div class="text-center">
+          <span class="position"><a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a></span>
+        </div>
+
         <nav id="colorlib-main-menu" role="navigation" class="navbar">
           <div id="navbar" class="collapse">
             <ul>
@@ -121,9 +121,50 @@
             </ul>
           </div>
         </nav>
-        <div class="text-center social-media">…</div>
-        <div class="colorlib-footer" style="position:absolute;bottom:0;width:100%;">…</div>
+
+        <!-- Social icons -->
+        <div class="text-center social-media">
+          <ul>
+            <li>
+              <a href="mailto:koorosh.azizi.92@gmail.com" aria-label="Email">
+                <i class="icon-mail5"></i>
+              </a>
+            </li>
+            <li>
+              <a href="static/CV.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)">
+                <i class="ai ai-cv"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://scholar.google.com/citations?user=MXlzhmcAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar">
+                <i class="ai ai-google-scholar-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/koorosh-azizi-058367b2" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <i class="icon-linkedin2"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Koazizi" target="_blank" rel="noopener" aria-label="GitHub">
+                <i class="icon-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer -->
+        <div class="colorlib-footer" style="position:absolute; bottom:0; width:100%;">
+          <p class="text-center" style="margin:10px 0;">
+            <small>
+              &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.
+              Made by <a href="https://colorlib.com" target="_blank" rel="noopener">Colorlib</a> |
+              Distributed by <a href="https://themewagon.com" target="_blank" rel="noopener">ThemeWagon</a>
+            </small>
+          </p>
+        </div>
       </aside>
+      <!-- END SIDEBAR -->
 
       <!-- MAIN -->
       <div id="colorlib-main">
@@ -132,7 +173,7 @@
 
             <h2 class="colorlib-heading">RESEARCH</h2>
 
-            <!-- Simple jump links (keep these; rail is removed) -->
+            <!-- Jump links -->
             <p class="quick-links">
               <strong>On this page:</strong>
               <a href="#overview">Overview</a> ·
