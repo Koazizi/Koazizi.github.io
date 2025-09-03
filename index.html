@@ -9,7 +9,7 @@
   <meta name="keywords" content="" />
   <meta name="author" content="Koorosh Azizi" />
 
-  <!-- Facebook and Twitter integration (if needed) -->
+  <!-- Social meta (optional) -->
   <meta property="og:title" content="" />
   <meta property="og:image" content="" />
   <meta property="og:url" content="" />
@@ -20,12 +20,11 @@
   <meta name="twitter:url" content="" />
   <meta name="twitter:card" content="" />
 
-  <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+  <!-- Keep Playfair for headings, add Poppins to match the research page body text -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
   <!-- CSS libraries -->
   <link rel="stylesheet" href="css/animate.css">
@@ -39,35 +38,85 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    /* Circular profile */
-    .author-img {
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background-size: cover !important;
-      background-position: center top !important;
-      margin: 0 auto 15px;
+    /* ===================== THEME TOKENS (match research page) ===================== */
+    :root{
+      --ink:#1f2937;          /* main text */
+      --ink-sub:#4b5563;      /* secondary text */
+      --brand:#2563eb;        /* accent/link color */
+      --bg:#f6f8fb;           /* page background */
+      --card:#ffffff;         /* panels/sidebar */
+      --bd:#e5e7eb;           /* borders */
+      --shadow:0 10px 28px rgba(2,6,23,.08);
+      --radius:14px;
     }
-    /* Highlight active menu item */
-    #navbar ul li.active a {
-      color: #3498db;
-      font-weight: 700;
+
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Poppins', sans-serif;
+      line-height:1.7;
+      color:var(--ink);
+      background:var(--bg);
     }
-    /* Hide all sections by default */
-    section[data-section] {
-      display: none;
+
+    /* ===================== SIDEBAR ===================== */
+    #colorlib-aside{
+      background:var(--card);
+      border-right:1px solid var(--bd);
+      box-shadow:var(--shadow);
     }
-    /* You can add a fade-in if you like */
-    section[data-section].visible {
-      display: block;
+    #colorlib-logo a{
+      font-family:'Playfair Display', serif;
+      color:#0f172a;
+      letter-spacing:.02em;
     }
+    .position a{ color:#5b77d4; text-transform:uppercase; font-size:12px; letter-spacing:.06em; }
+    .author-img{
+      width:180px;height:180px;border-radius:50%;
+      background-size:cover!important;background-position:center top!important;margin:0 auto 15px;
+      border:1px solid var(--bd); box-shadow:0 1px 10px rgba(2,6,23,.06);
+    }
+
+    /* Nav links in sidebar */
+    #navbar ul li a{
+      color:#334155; text-transform:uppercase; letter-spacing:.14em;
+    }
+    #navbar ul li a:hover{ color:var(--brand); }
+    #navbar ul li.active a{
+      color:var(--brand);
+      font-weight:700;
+      text-decoration:underline;
+      text-underline-offset:4px;
+    }
+
+    /* Social icons */
+    .social-media ul{list-style:none; padding:0; margin:12px 0;}
+    .social-media li{display:inline-block; margin:0 6px;}
+    .social-media a{color:#334155; font-size:18px;}
+    .social-media a:hover{color:var(--brand);}
+
+    /* ===================== MAIN SECTIONS ===================== */
+    .colorlib-heading{
+      font-family:'Playfair Display', serif;
+      color:#0f172a;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+    .colorlib-narrow-content p,
+    .colorlib-narrow-content li{ color:var(--ink-sub); }
+
+    /* Make “cards” feel consistent with research page if you wrap content later */
+    .cardlike{
+      background:var(--card); border:1px solid var(--bd); border-radius:var(--radius); box-shadow:var(--shadow);
+      padding:22px;
+    }
+
+    /* Hide all sections by default (your existing SPA behavior) */
+    section[data-section]{ display:none; }
+    section[data-section].visible{ display:block; }
   </style>
 
-  <!-- Modernizr for legacy support -->
   <script src="js/modernizr-2.6.2.min.js"></script>
-  <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-  <![endif]-->
+  <!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
 </head>
 <body>
 
@@ -77,23 +126,15 @@
       <!-- ================= SIDEBAR ================= -->
       <aside id="colorlib-aside" role="complementary" class="border js-fullheight">
         <div class="text-center">
-          <!-- Profile image (clickable) -->
           <a href="Images/Profile.png" target="_blank">
-            <div class="author-img"
-                 style="background-image: url('Images/Profile.png');">
-            </div>
+            <div class="author-img" style="background-image:url('Images/Profile.png');"></div>
           </a>
-          <!-- Name + Position -->
           <h1 id="colorlib-logo"><a href="#">Koorosh Azizi</a></h1>
           <span class="position">
-            <a href="#">
-              Postdoctoral Fellow<br>
-              The University of Texas at Austin
-            </a>
+            <a href="#">Postdoctoral Fellow<br>The University of Texas at Austin</a>
           </span>
         </div>
 
-        <!-- Navigation -->
         <nav id="colorlib-main-menu" role="navigation" class="navbar">
           <div id="navbar" class="collapse">
             <ul>
@@ -118,8 +159,8 @@
         </div>
 
         <!-- Footer credit -->
-        <div class="colorlib-footer" style="position: absolute; bottom: 0; width: 100%;">
-          <p>
+        <div class="colorlib-footer" style="position:absolute; bottom:0; width:100%;">
+          <p class="text-center" style="margin:10px 0;">
             <small>
               &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved.
               Made by <a href="https://colorlib.com" target="_blank">Colorlib</a> |
@@ -138,9 +179,10 @@
           <div class="colorlib-narrow-content">
             <h2 class="colorlib-heading">ABOUT ME</h2>
             <p style="font-size:16px; text-align:justify;">
-              I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision‑making processes, coupled human‑natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio‑environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!
+              I am a postdoctoral fellow at The University of Texas at Austin. My research spans various interdisciplinary aspects of water and environmental systems, including climate risk assessment, decision-making processes, coupled human-natural systems, policy analysis, sustainability, and mitigation and adaptation strategies. I am focused on understanding the dynamic interactions between various components of socio-environmental systems, especially in the context of urban water management. My work involves investigating the impacts of diverse climatic risks on urban water systems and communities, advancing the theory of coupled systems, translating this theory into actionable models, and applying these models to support infrastructure planning and policy analysis. My aim is to foster more sustainable and resilient practices in response to future climate risk challenges, with a high emphasis on equity and justice. I am always keen to collaborate—feel free to reach out!
             </p>
-<br><br>
+
+            <br><br>
             <h2 class="colorlib-heading">APPOINTMENTS</h2>
             <ul style="font-size:15px; list-style-position: inside;">
               <li>
@@ -154,7 +196,8 @@
                 Advisors: Dr. Margaret Garcia, Dr. John (Marty) Anderies
               </li>
             </ul>
-<br><br>
+
+            <br><br>
             <h2 class="colorlib-heading">EDUCATION</h2>
             <ul style="font-size:15px; list-style-position: inside;">
               <li>
@@ -170,7 +213,8 @@
                 Isfahan University of Technology, Isfahan, Iran
               </li>
             </ul>
-<br><br>
+
+            <br><br>
             <h2 class="colorlib-heading">NEWS</h2>
             <ul>
               <!-- any news items here -->
@@ -178,7 +222,7 @@
           </div>
         </section>
 
-        <!-- RESEARCH SECTION -->
+        <!-- RESEARCH SECTION (teaser) -->
         <section class="colorlib-blog" data-section="research">
           <div class="colorlib-narrow-content">
             <div class="row">
@@ -273,20 +317,18 @@
 
   <script>
     $(function() {
-      // Hide all, then show 'about' on load
+      // Show 'about' on load
       $('section[data-section]').removeClass('visible').hide();
       $('section[data-section="about"]').addClass('visible').show();
 
       // Handle menu clicks
-      $('#navbar ul li a[data-nav-section]').click(function(e) {
+      $('#navbar ul li a[data-nav-section]').on('click', function(e) {
         e.preventDefault();
         var sec = $(this).data('nav-section');
 
-        // Toggle active class on menu
         $('#navbar ul li').removeClass('active');
         $(this).parent().addClass('active');
 
-        // Hide all, then show selected
         $('section[data-section]').removeClass('visible').hide();
         $('section[data-section="' + sec + '"]').addClass('visible').fadeIn(300);
       });
