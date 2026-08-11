@@ -9,6 +9,18 @@ Last verified: 10 August 2026.
 
 ## Photographs
 
+### `photos/hero-flooded-street.jpg` and `photos/hero-flooded-street-sm.jpg`
+- **Subject:** Cars stranded on a flooded arterial road, Houston, Texas, 31 August 2017
+- **Source:** Wikimedia Commons / FEMA — https://commons.wikimedia.org/wiki/File:FEMA_-_IMG_0401MEB_-_Cars_Floating_in_Houston_Street.jpg
+- **Licence:** Public domain (work of the Federal Emergency Management Agency, a US federal agency)
+- **Photographer:** Dominick Del Vecchio
+- **Attribution:** not required. Credited on the page as a courtesy.
+- **Original:** 6720 × 4480 px. Used here as two crops — 2000 px wide (2.35:1) for
+  desktop and 1100 px wide (1.45:1) for small screens.
+- **Used as:** the home-page hero background, behind a two-layer scrim. White text
+  measures 8.3:1 against the brightest pixel behind the text column on desktop and
+  10.5:1 on mobile — WCAG AAA at both sizes.
+
 ### `photos/flooded-neighborhood.jpg`
 - **Subject:** Flooded residential street, Cedar Rapids, Iowa, 12 June 2008
 - **Source:** U.S. Geological Survey — https://www.usgs.gov/media/images/flooded-neighborhood-cedar-rapids-ia
