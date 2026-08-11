@@ -42,7 +42,6 @@
         <li><a class="nav__link" href="publications.html">Publications</a></li>
         <li><a class="nav__link" href="people.html">People</a></li>
         <li><a class="nav__link" href="teaching.html" aria-current="page">Teaching</a></li>
-        <li><a class="nav__link" href="tools.html">Tools &amp; Data</a></li>
         <li><a class="nav__link" href="news.html">News</a></li>
         <li><a class="nav__link" href="join.html">Join Us</a></li>
       </ul>
@@ -70,49 +69,106 @@
       <h2>Tennessee State University</h2>
       <p class="muted">Instructor of record, Department of Civil and Architectural Engineering.</p>
 
-      <div class="table-wrap mt-6">
-        <table>
-          <caption>Courses taught</caption>
-          <thead>
-            <tr>
-              <th scope="col">Term</th>
-              <th scope="col">Course</th>
-              <th scope="col">Student evaluation</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Fall 2026</th>
-              <td><strong>Hydrology</strong></td>
-              <td class="muted">&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Fall 2026</th>
-              <td><strong>Introduction to Environmental Engineering</strong></td>
-              <td class="muted">&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Fall 2026</th>
-              <td><strong>Fluid Mechanics</strong></td>
-              <td class="muted">&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Fall 2026</th>
-              <td><strong>Fluid Mechanics Laboratory</strong></td>
-              <td class="muted">&mdash;</td>
-            </tr>
-            <tr>
-              <th scope="row">Spring 2026</th>
-              <td><strong>Hydraulic Engineering</strong></td>
-              <td>4.55 / 5.00</td>
-            </tr>
-            <tr>
-              <th scope="row">Spring 2026</th>
-              <td><strong>Water and Wastewater Engineering</strong></td>
-              <td>4.98 / 5.00</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="course-grid mt-6">
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-hydrology.jpg" width="900" height="506" loading="lazy"
+                 alt="A hydrographer suspended from a cableway over a river, measuring stream discharge against a backdrop of snow-covered mountains.">
+            <span class="course-card__term">Fall 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Hydrology</h3>
+            <p class="course-card__note">
+              The water cycle made quantitative: precipitation, runoff, infiltration and
+              streamflow &mdash; and the measurements behind every model.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: USGS, Grand Teton National Park (public domain)</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-envintro.jpg" width="900" height="506" loading="lazy"
+                 alt="A constructed stormwater wetland ringed with rushes and emergent plants in a public park, pine woodland behind.">
+            <span class="course-card__term">Fall 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Introduction to Environmental Engineering</h3>
+            <p class="course-card__note">
+              Water, air, soil and waste: the engineering that keeps environments &mdash;
+              and the people in them &mdash; healthy.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: NC Wetlands, Apex Nature Park (CC0)</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-fluids.jpg" width="900" height="506" loading="lazy"
+                 alt="A standing hydraulic jump in a fast-flowing river, white turbulent water rolling back over the incoming current.">
+            <span class="course-card__term">Fall 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Fluid Mechanics</h3>
+            <p class="course-card__note">
+              Pressure, momentum and energy in moving water &mdash; including the hydraulic
+              jump, seen here in the wild.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: Riverscape hydraulic jump (CC0)</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-fluidslab.jpg" width="900" height="506" loading="lazy"
+                 alt="Water pouring smoothly over the crest of an angled weir into a turbulent stilling basin, a calm lake surface behind.">
+            <span class="course-card__term">Fall 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Fluid Mechanics Laboratory</h3>
+            <p class="course-card__note">
+              Flow over weirs, energy losses and discharge measurement &mdash; the classic
+              experiments, done properly.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: weir on the Teteriv River (CC0)</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-hydraulic.jpg" width="900" height="506" loading="lazy"
+                 alt="A massive concrete spillway chute under construction at Folsom Dam, cranes and formwork lining the excavated channel.">
+            <span class="course-card__term">Spring 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Hydraulic Engineering</h3>
+            <span class="course-card__eval">Student evaluation 4.55 / 5.00</span>
+            <p class="course-card__note">
+              Designing the structures that move water: channels, spillways, culverts and
+              stormwater systems.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: USACE, Folsom Dam auxiliary spillway (public domain)</p>
+        </article>
+
+        <article class="course-card">
+          <div class="course-card__media">
+            <img src="assets/img/photos/course-waterww.jpg" width="900" height="506" loading="lazy"
+                 alt="Top-down aerial view of three circular clarifier tanks at a wastewater treatment plant, service buildings and parked cars around them.">
+            <span class="course-card__term">Spring 2026</span>
+          </div>
+          <div class="course-card__body">
+            <h3>Water and Wastewater Engineering</h3>
+            <span class="course-card__eval">Student evaluation 4.98 / 5.00</span>
+            <p class="course-card__note">
+              From source to tap and back: treatment processes, distribution and the
+              engineering of safe urban water.
+            </p>
+          </div>
+          <p class="course-card__credit">Photo: Roen Wainscoat (CC BY-SA 4.0)</p>
+        </article>
+
       </div>
 
       <div class="card card--tint mt-6">
@@ -273,7 +329,6 @@
           <li><a href="publications.html">Publications</a></li>
           <li><a href="people.html">People</a></li>
           <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="tools.html">Tools &amp; Data</a></li>
           <li><a href="news.html">News</a></li>
           <li><a href="join.html">Join Us</a></li>
           <li><a href="contact.html">Contact</a></li>

@@ -1,281 +1,31 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Tools &amp; Data | Urban Hydrosystems &amp; Resilience Lab</title>
-<meta name="description" content="Open code, data and interactive visualisations from the Urban Hydrosystems &amp; Resilience Lab: an agent-based model of green stormwater infrastructure adoption, flood-governance network analysis, and interactive fuzzy cognitive maps.">
-<link rel="canonical" href="https://koazizi.github.io/tools.html">
-
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Urban Hydrosystems &amp; Resilience Lab">
-<meta property="og:title" content="Tools &amp; Data | Urban Hydrosystems &amp; Resilience Lab">
-<meta property="og:description" content="Open code, data and interactive visualisations behind the lab's published work.">
-<meta property="og:url" content="https://koazizi.github.io/tools.html">
-<meta property="og:image" content="https://koazizi.github.io/assets/og/og-default.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="twitter:card" content="summary_large_image">
-
+<title>Moved | Urban Hydrosystems &amp; Resilience Lab</title>
+<meta name="description" content="The Tools &amp; Data page has been folded into the Research page.">
+<link rel="canonical" href="https://koazizi.github.io/research.html">
+<meta http-equiv="refresh" content="0; url=/research.html#open-science">
+<meta name="robots" content="noindex, follow">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="assets/fonts/SourceSerif4-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/css/site.css">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px;
+         background: #fff; color: #1a1a1a;
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; }
+  main { max-width: 34rem; text-align: center; }
+  h1 { font-family: Georgia, serif; color: #003366; font-size: 1.5rem; }
+  a { color: #00539f; }
+</style>
 </head>
 <body>
-
-<a class="skip-link" href="#main">Skip to main content</a>
-
-<header class="site-header">
-  <div class="wrap site-header__inner">
-    <a class="brand" href="index.html">
-      <span class="brand__mark">UHR Lab</span>
-      <span class="brand__sub">Tennessee State University</span>
-    </a>
-    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul class="nav__list">
-        <li><a class="nav__link" href="research.html">Research</a></li>
-        <li><a class="nav__link" href="publications.html">Publications</a></li>
-        <li><a class="nav__link" href="people.html">People</a></li>
-        <li><a class="nav__link" href="teaching.html">Teaching</a></li>
-        <li><a class="nav__link" href="tools.html" aria-current="page">Tools &amp; Data</a></li>
-        <li><a class="nav__link" href="news.html">News</a></li>
-        <li><a class="nav__link" href="join.html">Join Us</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main id="main">
-
-  <div class="page-head">
-    <div class="wrap">
-      <p class="page-head__eyebrow">Tools &amp; Data</p>
-      <h1>Code, data and interactive results</h1>
-      <p class="page-head__lede">
-        The models and datasets behind the lab&rsquo;s published work, in the state they were
-        actually used. Everything below is public; each repository is linked to the paper it
-        supports.
-      </p>
-    </div>
-  </div>
-
-  <!-- ===================== INTERACTIVE ===================== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Interactive</p>
-        <h2>Flood-governance cognitive maps</h2>
-        <p>
-          Fuzzy cognitive maps built from stakeholder interviews, rendered as explorable
-          networks. Each map shows how one sector understands the drivers of flood risk and
-          how those drivers connect &mdash; drag nodes, zoom, and compare across sectors.
-        </p>
-      </div>
-
-      <div class="grid grid--3">
-        <article class="card">
-          <h3><a href="https://koazizi.github.io/Fuzzy-Cognative-Maps/Government_Network.html" rel="noopener">Government agencies</a></h3>
-          <p>How public agencies map the causes and consequences of flooding.</p>
-        </article>
-        <article class="card">
-          <h3><a href="https://koazizi.github.io/Fuzzy-Cognative-Maps/Industry_Network.html" rel="noopener">Industry</a></h3>
-          <p>The same exercise, seen from the private sector.</p>
-        </article>
-        <article class="card">
-          <h3><a href="https://koazizi.github.io/Fuzzy-Cognative-Maps/Nonprofit_Network.html" rel="noopener">Non-profit organisations</a></h3>
-          <p>Community and non-profit framings of flood drivers and interventions.</p>
-        </article>
-      </div>
-
-      <p class="mt-6 muted">
-        Source notebook and data:
-        <a href="https://github.com/Koazizi/Fuzzy-Cognative-Maps" rel="noopener">github.com/Koazizi/Fuzzy-Cognative-Maps</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- ===================== CODE ===================== -->
-  <section class="section section--tint">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Code &amp; data</p>
-        <h2>Model and analysis repositories</h2>
-      </div>
-
-      <div class="list-width">
-
-        <article class="project">
-          <h3><a href="https://github.com/Koazizi/GSI-ABM" rel="noopener">GSI-ABM &mdash; green stormwater infrastructure agent-based model</a></h3>
-          <p class="project__meta"><strong>Jupyter notebook, R, ArcGIS shapefiles</strong> &middot; Austin, Texas</p>
-          <p>
-            An agent-based model in which household agents decide whether to adopt structural or
-            rain-catching green stormwater infrastructure, driven by socio-demographics, parcel
-            characteristics, financial constraints, social capital and peer influence, with
-            behavioural constructs estimated from survey data by structural equation modelling.
-            Includes the council-district and parcel shapefiles and the missing-data sensitivity
-            analysis.
-          </p>
-          <p class="project__meta">
-            Supports: <em>Nature Cities</em> (2026, in press) &middot;
-            <a href="research.html#theme-gsi">Theme 2</a>
-          </p>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/Koazizi/Flood-Governance-Networks" rel="noopener">Flood-Governance-Networks &mdash; Southeast Texas network analysis</a></h3>
-          <p class="project__meta"><strong>R Markdown, ERGM, 15 edge-list datasets</strong> &middot; Southeast Texas</p>
-          <p>
-            Network data and exponential random graph models for collaboration, preparation and
-            response ties among flood-governance organisations across Southeast Texas, separated
-            by issue &mdash; infrastructure, precipitation, socio-economic, geographic, economic
-            and population. Includes the coded interview information and ERGM results.
-          </p>
-          <p class="project__meta">
-            Supports: <em>Water Resources Research</em> (2026) &middot;
-            <a href="https://doi.org/10.1029/2025WR041974" rel="noopener">DOI</a> &middot;
-            <a href="research.html#theme-governance">Theme 3</a>
-          </p>
-        </article>
-
-        <article class="project">
-          <h3><a href="https://github.com/Koazizi/Flood-Exposure-and-GSI-Adoption" rel="noopener">Flood-Exposure-and-GSI-Adoption</a></h3>
-          <p class="project__meta"><strong>Jupyter notebook, parcel and tract shapefiles</strong> &middot; Austin, Texas</p>
-          <p>
-            The spatial analysis testing whether household green stormwater infrastructure
-            adoption aligns with flood exposure, combining eligible-parcel exposure, census
-            tracts, council districts and hazard layers.
-          </p>
-          <p class="project__meta">
-            Supports: <em>Environmental Research Communications</em> (2026) &middot;
-            <a href="https://doi.org/10.1088/2515-7620/ae3ff0" rel="noopener">DOI</a> &middot;
-            <a href="research.html#theme-gsi">Theme 2</a>
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== METHODS / FIGURES ===================== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head">
-        <p class="eyebrow">Modelling</p>
-        <h2>How the models are put together</h2>
-      </div>
-
-      <div class="grid grid--2">
-        <figure class="figure">
-          <img src="assets/img/figures/gsi-abm-framework.jpg" width="610" height="418" loading="lazy"
-               alt="Flow diagram of the agent-based model. Socio-demographic data from census tracts, spatial parcel characteristics from GIS, behavioural constructs estimated from survey data, and financial constraints all feed a population of household agents distributed on a multi-grid space. Agents receive a baseline adoption score and decision threshold, are influenced by peer network formation and social influence mechanisms, and update behaviour scores through internal dynamics modelled by structural equation modelling.">
-          <figcaption>
-            Structure of the green stormwater infrastructure agent-based model.
-            <cite>Azizi, Garcia, Niyogi &amp; Bixler (2026), <em>Nature Cities</em>, in press.</cite>
-          </figcaption>
-        </figure>
-
-        <figure class="figure">
-          <img src="assets/img/figures/spatial-clusters.jpg" width="1010" height="1372" loading="lazy"
-               alt="Grid of eleven small choropleth maps of an urban county, each showing local spatial-autocorrelation clusters for a different variable — heat exposure, median income, poverty, college attainment, racial composition, rental share, household size, single-family share and programme qualification. Red marks high-high clusters, blue marks low-low clusters, with a legend panel at lower right.">
-          <figcaption>
-            Local spatial clustering of the socio-economic conditions that shape stormwater
-            programme participation.
-            <cite>From the lab&rsquo;s urban water equity analyses.</cite>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== POLICY ===================== -->
-  <section class="section section--tint">
-    <div class="wrap">
-      <div class="grid grid--2">
-        <article class="card">
-          <h3>Reuse and citation</h3>
-          <p>
-            Code and data are shared so that results can be checked and extended. If you use
-            them, please cite the paper they support rather than the repository alone. Questions
-            about a model, a parameter choice or a dataset are welcome &mdash; email
-            <a href="mailto:kazizi@tnstate.edu">kazizi@tnstate.edu</a>.
-          </p>
-          <p class="mb-0">
-            Where a repository does not yet carry an explicit licence file, treat it as
-            &ldquo;ask first&rdquo; and get in touch; licences are being added.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>What is not shared, and why</h3>
-          <p>
-            Interview transcripts, survey responses with identifying detail, and any data that
-            could re-identify a household or a named organisational contact stay closed. That is
-            a condition of the consent under which people gave them.
-          </p>
-          <p class="mb-0">
-            Coded, aggregated versions &mdash; edge lists, thematic codes, model inputs &mdash;
-            are published wherever the consent allows.
-          </p>
-        </article>
-      </div>
-    </div>
-  </section>
-
+<main>
+  <h1>This page has moved</h1>
+  <p>
+    Code, data and interactive results now live on the
+    <a href="/research.html#open-science">Research page</a>. You should be redirected
+    automatically.
+  </p>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__grid">
-      <div>
-        <h2>Urban Hydrosystems &amp; Resilience Lab</h2>
-        <p>
-          Department of Civil and Architectural Engineering<br>
-          Tennessee State University<br>
-          3500 John A. Merritt Blvd, Nashville, TN 37209
-        </p>
-        <p><a href="mailto:kazizi@tnstate.edu">kazizi@tnstate.edu</a></p>
-      </div>
-      <div>
-        <h2>Site</h2>
-        <ul>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="publications.html">Publications</a></li>
-          <li><a href="people.html">People</a></li>
-          <li><a href="teaching.html">Teaching</a></li>
-          <li><a href="tools.html">Tools &amp; Data</a></li>
-          <li><a href="news.html">News</a></li>
-          <li><a href="join.html">Join Us</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Elsewhere</h2>
-        <ul>
-          <li><a href="https://scholar.google.com/citations?user=MXlzhmcAAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
-          <li><a href="https://orcid.org/0000-0002-0786-7323" rel="noopener">ORCID</a></li>
-          <li><a href="https://github.com/Koazizi" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.tnstate.edu/cae/azizi.aspx" rel="noopener">TSU faculty profile</a></li>
-          <li><a href="assets/cv/Koorosh_Azizi_CV_August_2026.pdf">CV (PDF)</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="site-footer__legal">
-      <p>
-        &copy; 2026 Koorosh Azizi. Site content licensed
-        <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener license">CC BY 4.0</a>
-        unless noted otherwise; image sources and licences are listed in
-        <a href="assets/img/CREDITS.md">CREDITS</a>.
-        The lab is affiliated with Tennessee State University; the university is not
-        responsible for the content of this site.
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/nav.js" defer></script>
 </body>
 </html>
