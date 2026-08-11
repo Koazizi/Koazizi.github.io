@@ -24,6 +24,8 @@
 
 <link rel="preload" href="assets/fonts/SourceSerif4-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/SourceSans3-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="assets/img/photos/hero-flooded-street.jpg" media="(min-width: 901px)">
+<link rel="preload" as="image" href="assets/img/photos/hero-flooded-street-sm.jpg" media="(max-width: 900px)">
 <link rel="stylesheet" href="assets/css/site.css">
 
 <script type="application/ld+json">
@@ -117,34 +119,25 @@
 <main id="main">
 
   <!-- ===================== HERO ===================== -->
-  <section class="hero">
-    <div class="wrap hero__grid">
-      <div>
+  <section class="hero hero--photo">
+    <div class="wrap">
+      <div class="hero__content">
         <p class="hero__kicker">Urban Hydrosystems &amp; Resilience Lab</p>
         <h1>Urban flood risk is produced by infrastructure, behaviour and institutions &mdash; not by rainfall alone.</h1>
         <p class="hero__lede">
           We study how drainage systems, household decisions and the agencies that govern
-          them interact to determine who is protected from flooding and who is not. The lab
-          is based in the Department of Civil and Architectural Engineering at Tennessee
-          State University, and works in Nashville, across the U.S. Gulf Coast, and nationally.
+          them interact to determine who is protected from flooding and who is not. Based at
+          Tennessee State University; working in Nashville, across the U.S. Gulf Coast, and
+          nationally.
         </p>
         <div class="btn-row">
           <a class="btn btn--primary" href="research.html">Explore the research</a>
           <a class="btn btn--ghost" href="join.html">Join the lab</a>
         </div>
+        <p class="hero__credit">
+          Houston, Texas, 31 August 2017. Photo by Dominick Del Vecchio, FEMA (public domain).
+        </p>
       </div>
-
-      <figure class="hero__figure">
-        <img src="assets/img/figures/citizen-science-flood-model.jpg"
-             width="1200" height="754"
-             alt="Two-panel research figure. Left: a flow diagram of a three-phase framework in which experts and residents exchange guidance, information and local flood knowledge to improve a hydrodynamic model. Right: a modelled map of an urban watershed shaded by maximum water depth from under 0.1 m to over 2 m, overlaid with red dots marking resident flooding reports."
-             fetchpriority="high">
-        <figcaption>
-          Coupling resident observations with hydrodynamic modelling to characterise urban
-          pluvial flooding in North Memphis.
-          <cite>Azizi, Diko &amp; Meier (2023), <em>Water Alternatives</em>.</cite>
-        </figcaption>
-      </figure>
     </div>
   </section>
 
@@ -237,6 +230,17 @@
             <a href="publications.html">See all publications</a>.
           </p>
         </article>
+
+        <figure class="figure mt-7">
+          <img src="assets/img/figures/citizen-science-flood-model.jpg"
+               width="1200" height="754" loading="lazy"
+               alt="Two-panel research figure. Left: a flow diagram of a three-phase framework in which experts and residents exchange guidance, information and local flood knowledge to improve a hydrodynamic model. Right: a modelled map of an urban watershed shaded by maximum water depth from under 0.1 m to over 2 m, overlaid with red dots marking resident flooding reports.">
+          <figcaption>
+            What that looks like in practice: coupling resident observations with hydrodynamic
+            modelling to characterise urban pluvial flooding in North Memphis.
+            <cite>Azizi, Diko &amp; Meier (2023), <em>Water Alternatives</em>.</cite>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
