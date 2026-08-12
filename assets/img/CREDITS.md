@@ -1,113 +1,70 @@
 # Image credits and licences
 
-Every image on this site is **self-hosted**, never hot-linked. Each entry records the
-source page, the licence, and the attribution shown on the site. No figures from the
-lab's published papers are used on the site.
+The site does **not** use figures from the lab's published papers. Research and teaching pages use independent photography instead.
 
-Last verified: 11 August 2026.
+Last verified: 12 August 2026.
 
----
+## Pexels photography
 
-## Hero
+Pexels states that its photos and videos can be used for free, attribution is not required, and the files may be modified. See the Pexels License: https://www.pexels.com/license/
 
-### `photos/hero-nashville.jpg` and `photos/hero-nashville-sm.jpg`
-- **Subject:** Nashville skyline and the Cumberland River at night
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Nashville_skyline_2009.jpg
-- **Licence:** Public domain (released by the photographer, Kaldari)
-- **Attribution:** not required; credited on the page as a courtesy
-- **Used as:** home-page hero background behind a scrim; white text contrast verified
-  against the brightest pixel behind the text column
+The current site credits photographers or Pexels visibly where practical, even though attribution is not required.
 
----
+### Home page
 
-## Research theme banners
+- **Nashville and the Cumberland River at sunrise**
+  - Pexels photo: https://www.pexels.com/photo/nashville-skyline-with-pedestrian-bridge-at-sunrise-28981891/
+  - Photographer: Colon Freld
+  - Used as: home-page hero
 
-### `photos/theme-flood.jpg`
-- **Subject:** Cars stranded on a flooded arterial road, Houston, Texas, 31 August 2017
-- **Source:** Wikimedia Commons / FEMA — https://commons.wikimedia.org/wiki/File:FEMA_-_IMG_0401MEB_-_Cars_Floating_in_Houston_Street.jpg
-- **Licence:** Public domain (FEMA, US federal work). Photographer: Dominick Del Vecchio
-- **Used as:** Theme 1 banner (Research) and Theme 1 card (Home)
+- **Aerial view of a flooded city street / park after a storm**
+  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-a-flooded-city-street-24705698/
+  - Photographer: Radoslaw Sikorski
+  - Used as: flood-risk research card and project imagery
 
-### `photos/theme-water.jpg`
-- **Subject:** Monroe Lake, Indiana — a drinking-water supply reservoir, aerial view, 2019
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Monroe_Lake_2019_aerial.jpg
-- **Licence:** **CC BY 2.0**, photographer Doc Searls
-- **Attribution shown:** "Photo: Doc Searls (CC BY 2.0)"
-- **Used as:** Theme 2 banner (Research) and Theme 2 card (Home)
+- **Aerial view of water-treatment infrastructure**
+  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-water-treatment-facility-infrastructure-35425761/
+  - Photographer: Giant Asparagus
+  - Used as: urban-water-systems research card and project imagery
 
-### `photos/theme-people.jpg`
-- **Subject:** Vegetated stormwater curb extension (green stormwater infrastructure), Emeryville, California
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Emeryville_California_Stormwater_Curb_Extension.jpg
-- **Licence:** **CC BY-SA 4.0**, author Psa1966
-- **Attribution shown:** "Photo: Psa1966 (CC BY-SA 4.0)"
-- **Used as:** Theme 3 banner (Research) and Theme 3 card (Home)
+- **Modern building with a green roof in an urban cityscape**
+  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-modern-green-roof-building-in-urban-cityscape-37720193/
+  - Photographer: Miroslaw LT
+  - Used as: distributed stormwater systems research card and project imagery
 
----
+- **Aerial suburban neighborhood**
+  - Pexels photo: https://www.pexels.com/photo/an-aerial-shot-of-houses-in-a-neighborhood-10854905/
+  - Used as: flood-insurance project imagery
 
-## Other research imagery
+### Research page
 
-### `photos/tn-flood-landsat.jpg`
-- **Subject:** Flooding across Tennessee, Landsat 9 OLI-2, 17 February 2025
-- **Source:** NASA Earth Observatory — https://science.nasa.gov/earth/earth-observatory/floods-swamp-tennessee-153957
-- **Licence:** Public domain (NASA)
-- **Required credit (shown):** "NASA Earth Observatory image by Michala Garrison, using Landsat data from the U.S. Geological Survey."
+The three research banners reuse the Pexels flood, water-treatment and green-roof photographs listed above so the site's visual identity stays coherent across Home and Research.
+
+### Teaching page
+
+- **River in mountains**: https://www.pexels.com/photo/river-in-mountains-16105128/ — Engineering Hydrology
+- **Wetland vegetation and water**: https://www.pexels.com/photo/scenic-wetlands-with-vibrant-vegetation-and-water-29885986/ — Introduction to Environmental Engineering
+- **Flowing water**: https://www.pexels.com/photo/flowing-water-6528803/ — Fluid Mechanics
+- **Long-exposure flowing water**: https://www.pexels.com/photo/long-exposure-of-flowing-water-12719831/ — Fluid Mechanics Laboratory
+- **Top view of a dam and flowing river**: https://www.pexels.com/photo/top-view-of-river-flowing-through-a-water-dam-9384849/ — Hydraulic Engineering
+- **Aerial wastewater treatment plant**: https://www.pexels.com/photo/aerial-view-of-a-wastewater-treatment-plant-35425762/ — Water and Wastewater Engineering
+
+## Other images
+
+### `azizi-portrait.jpg`
+
+Studio portrait of Koorosh Azizi, supplied by the subject and used on the People page.
 
 ### `photos/nashville-iss.jpg`
-- **Subject:** Nashville and the Cumberland River from the ISS (ISS066-E-156616), 3 March 2022
-- **Source:** NASA — https://www.nasa.gov/image-article/nashville-tennessee/
-- **Licence:** Public domain (NASA). Credited "NASA"
-- **Used on:** Contact page
 
----
+- Subject: Nashville and the Cumberland River from the International Space Station, 3 March 2022
+- Source: NASA: https://www.nasa.gov/image-article/nashville-tennessee/
+- Licence: public domain as a U.S. federal work
+- Used on: Contact page
 
-## Course covers (Teaching)
+## Use principles
 
-### `photos/course-hydrology.jpg`
-- **Subject:** USGS hydrographer measuring stream discharge from a cableway, Grand Teton National Park
-- **Source:** Wikimedia Commons / USGS — https://commons.wikimedia.org/wiki/File:Measuring_Stream_Discharge_in_Grand_Teton_National_Park_(12101510016).jpg
-- **Licence:** Public domain (USGS)
-
-### `photos/course-envintro.jpg`
-- **Subject:** Constructed stormwater wetland, Apex Nature Park, North Carolina
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Other_constructed_stormwater_wetland_apex_nature_park_ncwetlands_KG_(2).jpg
-- **Licence:** **CC0 1.0** (public domain dedication), NC Wetlands
-
-### `photos/course-fluids.jpg`
-- **Subject:** Standing hydraulic jump in a river
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Riverscape_hydraulicjump2.jpg
-- **Licence:** **CC0 1.0** (public domain dedication)
-
-### `photos/course-fluidslab.jpg`
-- **Subject:** Water flowing over a weir into a stilling basin, Teteriv River, Ukraine
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Teteriv_1.JPG
-- **Licence:** **CC0 1.0** (public domain dedication), Mcoffsky
-
-### `photos/course-hydraulic.jpg`
-- **Subject:** Folsom Dam auxiliary spillway under construction
-- **Source:** Wikimedia Commons / USACE — https://commons.wikimedia.org/wiki/File:Progress_continues_on_Folsom_Dam%E2%80%99s_new_spillway_(16399632304).jpg
-- **Licence:** Public domain (US Army Corps of Engineers, Sacramento District)
-
-### `photos/course-waterww.jpg`
-- **Subject:** Circular clarifier tanks at a wastewater treatment plant, aerial view
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Wastewater_Clarifiers.jpg
-- **Licence:** **CC BY-SA 4.0**, photographer Roen Wainscoat
-- **Attribution shown:** "Photo: Roen Wainscoat (CC BY-SA 4.0)"
-
----
-
-## Portrait
-
-`azizi-portrait.jpg` — studio headshot of Koorosh Azizi, supplied by the subject.
-
----
-
-## Notes
-
-- **CC BY / CC BY-SA images** carry their attribution in the visible caption or credit
-  line where they appear, satisfying the licence's attribution requirement. The CC BY-SA
-  images are used unmodified apart from cropping and resizing.
-- **US federal works** (FEMA, USGS, USACE, NASA) are public domain; credits are shown as
-  a courtesy and, for NASA Earth Observatory, per their requested credit line.
-- **Deliberately not used:** figures from the lab's own publications (removed by
-  decision, August 2026); any image hot-linked from another site; images of identifiable
-  disaster survivors receiving aid.
+- No figures or visualizations from the lab's own papers are used as decorative website imagery.
+- Photographs of identifiable disaster survivors receiving aid are deliberately avoided as decorative material.
+- Pexels images are used under the Pexels License and linked back to their source pages here.
+- Public-domain U.S. government images are credited where used.
