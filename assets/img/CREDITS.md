@@ -12,10 +12,10 @@ Last verified: 13 August 2026.
 ## Hero
 
 ### `photos/hero-nashville.jpg` and `photos/hero-nashville-sm.jpg`
-- **Subject:** Nashville skyline and the Cumberland River at night
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Nashville_skyline_2009.jpg
-- **Licence:** Public domain (released by the photographer, Kaldari)
-- **Attribution:** not required; credited in the caption as a courtesy
+- **Subject:** Downtown Nashville at night from the John Seigenthaler Pedestrian Bridge over the Cumberland River
+- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Nashville,_TN_at_night40.jpg (via Flickr)
+- **Licence:** **CC BY-SA 2.0**, photographer dconvertini — attribution required and shown in the hero caption
+- **Note:** used unmodified apart from resizing
 
 ## Research theme images
 
