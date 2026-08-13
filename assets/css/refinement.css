@@ -2,6 +2,7 @@
 @import url("refinement-identity.css");
 @import url("refinement-pages.css");
 @import url("refinement-responsive.css");
+@import url("hero-compact.css");
 
 /* Compatibility tokens for the rebuilt professional base system. */
 :root {
