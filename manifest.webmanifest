@@ -1,0 +1,14 @@
+{
+  "name": "Koorosh Azizi | Urban Hydrosystems & Resilience Lab",
+  "short_name": "Koorosh Azizi",
+  "description": "Research on coupled human-water-infrastructure systems, urban flood risk, water services, climate resilience and equity.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#06233f",
+  "icons": [
+    {"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"},
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}
+  ]
+}
