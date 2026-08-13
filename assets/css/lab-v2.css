@@ -267,3 +267,18 @@
   .lab-hero__media img { height: auto; }
   .lab-hero__media figcaption { inset: auto .8rem .8rem .8rem; max-width: none; }
 }
+/* ===== Hero fit (14 Aug 2026): the text column sets the hero height; the
+   photograph fills the panel exactly, trimmed top and bottom (PI-approved)
+   so the whole hero fits the first screen. ===== */
+@media (min-width: 1051px) {
+  .lab-hero__grid { align-items: stretch; }
+  .lab-hero__copy { align-self: center; }
+  .lab-hero__media { position: relative; }
+  .lab-hero__media picture { position: absolute; inset: 0; }
+  .lab-hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* fill the panel; excess sky/water trimmed */
+    object-position: center 58%;  /* keep the tower, skyline and riverfront */
+  }
+}
