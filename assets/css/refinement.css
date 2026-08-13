@@ -2,3 +2,157 @@
 @import url("refinement-identity.css");
 @import url("refinement-pages.css");
 @import url("refinement-responsive.css");
+
+/* Compatibility tokens for the rebuilt professional base system. */
+:root {
+  --ink-invert: #ffffff;
+  --bg-deep: var(--navy-950);
+  --w-prose: 70ch;
+  --w-list: 900px;
+  --radius: 8px;
+  --focus: var(--blue-600);
+  --s10: 8rem;
+}
+
+/* Extra depth without turning an academic website into a marketing template. */
+main > .section:not(.section--tint) {
+  background-image: linear-gradient(to right, transparent, rgba(0,94,168,.018), transparent);
+}
+
+.card,
+.research-question-card,
+.contribution-card,
+.future-grid article,
+.research-project,
+.open-science-card,
+.course-card,
+.contact-purpose-grid article,
+.collab-grid article {
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.card:hover,
+.research-question-card:hover,
+.contribution-card:hover,
+.future-grid article:hover,
+.research-project:hover,
+.open-science-card:hover,
+.contact-purpose-grid article:hover,
+.collab-grid article:hover {
+  transform: translateY(-3px);
+  border-color: #c3d5e3;
+  box-shadow: var(--shadow-md);
+}
+
+.figure,
+.profile-photo-card,
+.contact-figure {
+  box-shadow: var(--shadow-md);
+}
+
+/* Identity-first entry section for the complete chronological publication record. */
+.publication-program {
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+}
+.publication-program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.publication-program-grid article {
+  position: relative;
+  min-height: 100%;
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+.publication-program-grid article:hover {
+  transform: translateY(-3px);
+  border-color: #c3d5e3;
+  box-shadow: var(--shadow-md);
+}
+.publication-program-grid article > span {
+  display: inline-block;
+  margin-bottom: .75rem;
+  color: var(--blue-700);
+  font-size: .7rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.publication-program-grid h3 {
+  margin-bottom: .55rem;
+  font-size: 1.08rem;
+  line-height: 1.32;
+}
+.publication-program-grid p {
+  margin-bottom: .85rem;
+  color: var(--ink-2);
+  font-size: .86rem;
+}
+.publication-program-grid a {
+  font-size: .82rem;
+  font-weight: 780;
+  text-decoration: none;
+}
+.publication-program-grid a:hover { text-decoration: underline; }
+
+/* Stronger visual rhythm for long research and profile pages. */
+.theme--refined,
+.profile-grid,
+.contact-identity-grid,
+.teaching-philosophy-grid {
+  align-items: center;
+}
+
+.research-project,
+.open-science-card {
+  box-shadow: var(--shadow-sm);
+}
+
+.research-project__status,
+.theme__label,
+.timeline__year,
+.step__n {
+  letter-spacing: .09em;
+}
+
+/* Keep page anchors visible below the sticky header. */
+[id] { scroll-margin-top: 96px; }
+
+@media (max-width: 960px) {
+  .publication-program-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .publication-program-grid { grid-template-columns: 1fr; }
+  .card:hover,
+  .research-question-card:hover,
+  .contribution-card:hover,
+  .future-grid article:hover,
+  .research-project:hover,
+  .open-science-card:hover,
+  .contact-purpose-grid article:hover,
+  .collab-grid article:hover,
+  .publication-program-grid article:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .research-question-card,
+  .contribution-card,
+  .future-grid article,
+  .research-project,
+  .open-science-card,
+  .course-card,
+  .contact-purpose-grid article,
+  .collab-grid article,
+  .publication-program-grid article {
+    transition: none;
+  }
+}
