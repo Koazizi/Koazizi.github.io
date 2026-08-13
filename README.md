@@ -1,61 +1,59 @@
-# koazizi.github.io
+# Koorosh Azizi | Urban Hydrosystems & Resilience Lab
 
-Website of the **Urban Hydrosystems & Resilience Lab**, Department of Civil and Architectural
-Engineering, Tennessee State University — directed by Koorosh Azizi, Ph.D.
+Academic website of **Koorosh Azizi, Ph.D.**, Assistant Professor of Civil and Architectural Engineering at **Tennessee State University** and director of the **Urban Hydrosystems & Resilience Lab**.
 
-Live at <https://koazizi.github.io/>
+- Website: <https://koazizi.github.io/>
+- Official TSU faculty profile: <https://www.tnstate.edu/cae/azizi.aspx>
+- Google Scholar: <https://scholar.google.com/citations?user=MXlzhmcAAAAJ&hl=en>
+- ORCID: <https://orcid.org/0000-0002-0786-7323>
 
-## What this is
+## Research identity
 
-A hand-written static site: plain HTML, one stylesheet, one small JavaScript file for the
-mobile menu. There is **no build step and no framework** — every page can be edited directly
-in the GitHub web editor, and the site works fine with JavaScript disabled.
+Koorosh Azizi studies the nexus of **urban water and environmental systems**, with emphasis on:
 
-## Layout
+- climate risk assessment and urban flooding
+- sociohydrology and coupled human-water-infrastructure systems
+- human-environment interactions
+- green stormwater infrastructure, behavior and governance
+- water scarcity, affordability and sustainability transitions
+- equity, vulnerability and long-term urban resilience
 
-```
+The research combines hydrologic and hydrodynamic modeling with agent-based modeling, system dynamics, GIS and remote sensing, spatial analysis, network analysis, surveys and interviews.
+
+## Website structure
+
+```text
 index.html          research.html      publications.html
-people.html         teaching.html      tools.html
-news.html           join.html          contact.html
-404.html            sitemap.xml        robots.txt
+people.html         teaching.html      news.html
+join.html           contact.html       404.html
+sitemap.xml         robots.txt         feed.xml
+manifest.webmanifest
 
 assets/
-  css/site.css          all styling and design tokens
-  js/nav.js             mobile menu toggle only
-  fonts/                Source Serif 4 + Source Sans 3 (SIL OFL, self-hosted)
-  img/                  portrait, figures/, photos/, CREDITS.md
-  og/                   social preview card
-  cv/                   CV (PDF)
+  css/site.css              base design system
+  css/refinement.css        page-specific academic layouts
+  js/nav.js                 accessible mobile navigation
+  fonts/                    self-hosted Source Serif 4 and Source Sans 3
+  img/                      portrait and licensed photography
+  og/                       social preview images
+  cv/                       curriculum vitae
 ```
 
-## Editing
+## Search and accessibility
 
-**Adding a publication** — copy an existing `<li class="pub">` block in `publications.html`.
-Keep the conventions: full author list (never "et al."), `<span class="me">Azizi, K.</span>`
-around his own name, an asterisk after a mentored student's name, and a DOI link.
+The site includes canonical URLs, page-specific titles and descriptions, Person and ResearchOrganization structured data, an XML sitemap, robots controls, an Atom feed, semantic heading structure, keyboard-visible focus styles, descriptive image text, and layouts tested for desktop and mobile widths.
 
-**Adding news** — copy an `<li>` block in `news.html`. Every item needs a `<time datetime="…">`.
-Post roughly monthly; a visibly stale news feed is worse than no news page at all, so if it
-goes quiet for long, remove the page from the navigation instead.
+## Editing conventions
 
-**Changing the design** — everything lives in `assets/css/site.css`. Colours, type and spacing
-are CSS custom properties at the top of that file; change them there rather than in the pages.
+**Publications:** use complete author lists, bold Koorosh Azizi with `<span class="me">`, mark mentored student authors with an asterisk, and include a DOI or stable publication link.
 
-**Adding an image** — put the file in `assets/img/`, keep it under about 250 KB, write real
-alt text, and record its source and licence in `assets/img/CREDITS.md`. Never hot-link an
-image from another site.
+**News:** every entry requires a machine-readable `<time datetime="…">` value and a stable HTML ID so it can be linked from the Atom feed.
 
-## Design
+**Images:** document the source and license in [`assets/img/CREDITS.md`](assets/img/CREDITS.md). Figures from published papers are not used as decorative website imagery.
 
-Type is Source Serif 4 for headings and Source Sans 3 for body text — the pairing Stanford
-uses for its own identity — self-hosted so the site makes no third-party requests. The accent
-colour is Tennessee State University's official digital blue, `#00539F` (Reflex Blue), which
-gives 7.67:1 contrast on white and passes WCAG AAA for body text. No TSU logo is used; a
-departmental lockup would need approval from TSU Creative Services.
-
-## Credits and licences
+## Credits and licenses
 
 - Site content: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 - Site code: [MIT](LICENSE)
-- Images: each source and licence is recorded in [`assets/img/CREDITS.md`](assets/img/CREDITS.md)
+- Images: documented in [`assets/img/CREDITS.md`](assets/img/CREDITS.md)
 - Fonts: Source Serif 4 and Source Sans 3, SIL Open Font License 1.1
