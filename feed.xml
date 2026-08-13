@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Koorosh Azizi Research News</title>
+  <subtitle>Publications, projects and milestones from the Urban Hydrosystems &amp; Resilience Lab.</subtitle>
+  <link href="https://koazizi.github.io/feed.xml" rel="self"/>
+  <link href="https://koazizi.github.io/news.html"/>
+  <id>https://koazizi.github.io/</id>
+  <updated>2026-08-12T00:00:00-05:00</updated>
+  <author><name>Koorosh Azizi</name><email>kazizi@tnstate.edu</email></author>
+  <entry>
+    <title>Paper accepted in Nature Cities</title>
+    <link href="https://koazizi.github.io/news.html#news-202608-paper-accepted-in-nature-cities"/>
+    <id>https://koazizi.github.io/news.html#news-202608-paper-accepted-in-nature-cities</id>
+    <updated>2026-08-12T00:00:00-05:00</updated>
+    <summary>Coupled human-environmental systems: socio-behavioral and spatial dynamics in green stormwater infrastructure adoption was accepted in August 2026.</summary>
+  </entry>
+  <entry>
+    <title>New project on roadway flooding and emergency access in Nashville</title>
+    <link href="https://koazizi.github.io/news.html#news-202608-new-project-on-roadway-flooding"/>
+    <id>https://koazizi.github.io/news.html#news-202608-new-project-on-roadway-flooding</id>
+    <updated>2026-08-11T00:00:00-05:00</updated>
+    <summary>A CHDT University Transportation Center award supports coupled flood-hazard, road-network and traveler-response research in Nashville.</summary>
+  </entry>
+  <entry>
+    <title>Flood-governance networks paper published in Water Resources Research</title>
+    <link href="https://koazizi.github.io/news.html#news-202607-flood-governance-networks-paper-published"/>
+    <id>https://koazizi.github.io/news.html#news-202607-flood-governance-networks-paper-published</id>
+    <updated>2026-07-02T00:00:00-05:00</updated>
+    <summary>New network-analytic work identifies gaps and opportunities for collaborative flood governance on the U.S. Gulf Coast.</summary>
+  </entry>
+  <entry>
+    <title>Flood exposure and household green stormwater infrastructure adoption published</title>
+    <link href="https://koazizi.github.io/news.html#news-202602-flood-exposure-and-household-green"/>
+    <id>https://koazizi.github.io/news.html#news-202602-flood-exposure-and-household-green</id>
+    <updated>2026-02-01T00:00:00-06:00</updated>
+    <summary>The study tests whether household green stormwater infrastructure adoption aligns with flood exposure and parcel feasibility.</summary>
+  </entry>
+  <entry>
+    <title>The Urban Hydrosystems &amp; Resilience Lab opens at Tennessee State University</title>
+    <link href="https://koazizi.github.io/news.html#news-202601-the-urban-hydrosystems-resilience-lab"/>
+    <id>https://koazizi.github.io/news.html#news-202601-the-urban-hydrosystems-resilience-lab</id>
+    <updated>2026-01-01T00:00:00-06:00</updated>
+    <summary>Koorosh Azizi joined Tennessee State University and founded the Urban Hydrosystems &amp; Resilience Lab.</summary>
+  </entry>
+  <entry>
+    <title>Presented agent-based green-infrastructure research at AGU25</title>
+    <link href="https://koazizi.github.io/news.html#news-202512-presented-agent-based-green-infrastructure"/>
+    <id>https://koazizi.github.io/news.html#news-202512-presented-agent-based-green-infrastructure</id>
+    <updated>2025-12-01T00:00:00-06:00</updated>
+    <summary>Research on socio-behavioral dynamics of household green stormwater infrastructure adoption was presented at AGU25.</summary>
+  </entry>
+  <entry>
+    <title>Departmental seminar at Tennessee State University</title>
+    <link href="https://koazizi.github.io/news.html#news-20251114-departmental-seminar-at-tennessee-state"/>
+    <id>https://koazizi.github.io/news.html#news-20251114-departmental-seminar-at-tennessee-state</id>
+    <updated>2025-11-14T00:00:00-06:00</updated>
+    <summary>Invited departmental seminar at Tennessee State University on coupled human-infrastructure dynamics.</summary>
+  </entry>
+  <entry>
+    <title>Miami-Dade water-management paper published</title>
+    <link href="https://koazizi.github.io/news.html#news-202501-miami-dade-water-management-paper"/>
+    <id>https://koazizi.github.io/news.html#news-202501-miami-dade-water-management-paper</id>
+    <updated>2025-01-01T00:00:00-06:00</updated>
+    <summary>The paper examines effectiveness and equity in sustainable water-management transitions.</summary>
+  </entry>
+</feed>
