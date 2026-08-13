@@ -918,3 +918,155 @@
   color: #002447;
   border-color: #eaf1f8;
 }
+/* ===== Layout refinement pass (13 Aug 2026): compact heroes, complete the
+   half-styled sections, honest affordances ===== */
+
+/* 1 · Compact dark page headers (publications, teaching, news, contact) */
+.page-head {
+  padding-block: clamp(2.75rem, 4.5vw, 4.25rem) clamp(2.25rem, 3.5vw, 3.25rem);
+}
+.page-head h1 {
+  max-width: 26ch;
+  font-size: clamp(2.1rem, 1.6rem + 1.9vw, 3.2rem);
+}
+.page-head--research-v2 { padding-block: clamp(2.75rem, 4.5vw, 4rem); }
+.page-head--research-v2 h1 { font-size: clamp(2.1rem, 1.6rem + 1.9vw, 3.2rem); max-width: 26ch; }
+
+/* 2 · Compact light lab heads and heroes (research, people, home, join) */
+.lab-page-head { padding-block: clamp(2.75rem, 4.5vw, 4rem); }
+.lab-page-head h1 { max-width: 24ch; font-size: clamp(2.25rem, 1.7rem + 1.9vw, 3.3rem); }
+.lab-hero h1,
+.join-hero h1 {
+  max-width: 20ch;
+  font-size: clamp(2.2rem, 1.65rem + 1.9vw, 3.4rem);
+  text-wrap: balance;
+}
+
+/* 3 · Publications: "three empirical fronts" as a proper card grid */
+.publication-path-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.publication-path {
+  padding: 1.5rem 1.6rem;
+  border: 1px solid var(--line, #dde1e6);
+  border-radius: 12px;
+  background: #fff;
+}
+.publication-path__label {
+  display: block;
+  margin-bottom: .55rem;
+  color: var(--blue-700, #00539f);
+  font-size: .72rem;
+  font-weight: 820;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.publication-path h3 { margin: 0 0 .6rem; font-size: 1.15rem; }
+.publication-path ul { margin: 0 0 .6rem; padding-left: 1.1em; }
+.publication-path li { margin-bottom: .3rem; font-size: .95rem; color: var(--ink-2, #4a5568); }
+@media (max-width: 900px) { .publication-path-grid { grid-template-columns: 1fr; } }
+
+/* 4 · Teaching: approach principles as cards */
+.methods-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+.method-card {
+  padding: 1.4rem 1.6rem;
+  border: 1px solid var(--line, #dde1e6);
+  border-radius: 12px;
+  background: #fff;
+}
+.method-card > span {
+  display: block;
+  margin-bottom: .5rem;
+  color: var(--blue-700, #00539f);
+  font-size: .72rem;
+  font-weight: 820;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.method-card h3 { margin: 0 0 .5rem; font-size: 1.15rem; }
+.method-card p { margin: 0; max-width: 58ch; color: var(--ink-2, #4a5568); }
+@media (max-width: 760px) { .methods-grid { grid-template-columns: 1fr; } }
+
+/* 5 · Publications: conference-presentations disclosure */
+details.disclosure {
+  margin-top: 2rem;
+  border: 1px solid var(--line, #dde1e6);
+  border-radius: 12px;
+  background: #fff;
+}
+details.disclosure > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  padding: 1.05rem 1.4rem;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--navy-900, #003366);
+}
+details.disclosure > summary::-webkit-details-marker { display: none; }
+details.disclosure > summary::before {
+  content: "\25B8";
+  color: var(--blue-700, #00539f);
+  transition: transform .15s ease;
+}
+details.disclosure[open] > summary::before { transform: rotate(90deg); }
+details.disclosure > summary:hover { color: var(--blue-700, #00539f); }
+details.disclosure .pub-list { margin: 0; padding: 0 1.4rem 1.2rem; }
+
+/* 6 · Join: make the question rows read as the links they are */
+.join-question-list a {
+  position: relative;
+  padding-right: 2.4rem;
+  transition: background .15s ease;
+}
+.join-question-list a::after {
+  content: "\2192";
+  position: absolute;
+  right: .5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--blue-700, #00539f);
+  opacity: 0;
+  transition: opacity .15s ease, transform .15s ease;
+}
+.join-question-list a:hover { background: var(--paper-2, #f4f7fa); }
+.join-question-list a:hover::after { opacity: 1; transform: translate(4px, -50%); }
+.join-question-list a:hover strong { color: var(--blue-700, #00539f); }
+
+/* 7 · Home: framework nodes are now real links */
+a.lab-framework-node {
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
+}
+a.lab-framework-node:hover,
+a.lab-framework-node:focus-visible {
+  transform: translateY(-2px);
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(0, 36, 71, .10);
+  color: var(--blue-700, #00539f);
+}
+
+/* 8 · Home: PI credit line with portrait */
+.lab-hero__pi { display: flex; align-items: center; gap: .7rem; }
+.lab-hero__pi-photo {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 12%;
+  flex: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.lab-framework-node, .join-question-list a, .join-question-list a::after,
+  details.disclosure > summary::before { transition: none; }
+}
