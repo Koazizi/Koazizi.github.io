@@ -2,8 +2,8 @@
 
 Every image on this site is **self-hosted** — nothing is hot-linked from another
 server. Each entry records the source, the licence, and the attribution shown on the
-site. No figures from the lab's published papers are used, and no stock-platform
-(Pexels/Unsplash/Pixabay) images remain in use.
+site. No figures from the lab's published papers are used, Stock-platform images are avoided
+except where explicitly chosen and documented (the hero, below).
 
 Last verified: 13 August 2026.
 
@@ -12,10 +12,12 @@ Last verified: 13 August 2026.
 ## Hero
 
 ### `photos/hero-nashville.jpg` and `photos/hero-nashville-sm.jpg`
-- **Subject:** Downtown Nashville at night from the John Seigenthaler Pedestrian Bridge over the Cumberland River
-- **Source:** Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Nashville,_TN_at_night40.jpg (via Flickr)
-- **Licence:** **CC BY-SA 2.0**, photographer dconvertini — attribution required and shown in the hero caption
-- **Note:** used unmodified apart from resizing
+- **Subject:** Downtown Nashville skyline and the Cumberland River at sunset
+- **Source:** Pexels — https://www.pexels.com/photo/skyscraper-in-downtown-17883719/
+- **Photographer:** ceesz
+- **Licence:** Pexels licence (free to use and modify, commercial use permitted,
+  attribution not required — credited in the caption as a courtesy). Chosen by the PI.
+- **Note:** cropped from 2:3 to 4:5 and resized; self-hosted
 
 ## Research theme images
 
