@@ -905,3 +905,16 @@
   .research-area-number { top: 0; }
   .research-area-visual { width: 100%; }
 }
+
+/* --- fix: link pills inside dark page-head heroes were white-on-white --- */
+.page-head .linkrow a {
+  background: #ffffff;
+  color: #003366;
+  border-color: #ffffff;
+}
+.page-head .linkrow a:hover,
+.page-head .linkrow a:focus-visible {
+  background: #eaf1f8;
+  color: #002447;
+  border-color: #eaf1f8;
+}
