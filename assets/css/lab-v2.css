@@ -228,3 +228,42 @@
   .pi-card { grid-template-columns: 1fr; gap: 1.5rem; }
   .pi-card__portrait { max-width: 300px; }
 }
+
+/* ===== Hero embed (14 Aug 2026): image is part of the architecture -
+   flush with the hero's top, right and bottom edges, shown at its natural
+   aspect with no cropping - not a floating framed card. ===== */
+.lab-hero { padding-block: 0; }
+.lab-hero .wrap { width: auto; max-width: none; margin: 0; }
+.lab-hero__grid {
+  grid-template-columns: minmax(0, 1.1fr) minmax(380px, min(44vw, 620px));
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: stretch;
+  padding-left: max(1.25rem, calc((100vw - var(--wrap)) / 2));
+}
+.lab-hero__copy {
+  align-self: center;
+  padding-block: clamp(3.25rem, 6vw, 5rem);
+}
+.lab-hero__media {
+  border-radius: 0;
+  box-shadow: none;
+  max-width: none;
+  background: none;
+}
+.lab-hero__media img {
+  width: 100%;
+  height: auto;          /* natural aspect - the full photograph, no zoom */
+  object-fit: unset;
+  display: block;
+}
+.lab-hero__media figcaption {
+  inset: auto .9rem .9rem auto;   /* compact pill, bottom-right corner */
+  max-width: 34ch;
+}
+@media (max-width: 1050px) {
+  .lab-hero__grid { grid-template-columns: 1fr; gap: 0; padding-left: 0; }
+  .lab-hero__copy { padding: 2.6rem 1.25rem .5rem; }
+  .lab-hero__media { max-width: none; }
+  .lab-hero__media img { height: auto; }
+  .lab-hero__media figcaption { inset: auto .8rem .8rem .8rem; max-width: none; }
+}
