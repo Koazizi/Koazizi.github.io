@@ -1,70 +1,102 @@
 # Image credits and licences
 
-The site does **not** use figures from the lab's published papers. Research and teaching pages use independent photography instead.
+The website does **not** use figures or visualizations from the lab's published papers as decorative imagery. Research and teaching pages use independent photography.
 
-Last verified: 12 August 2026.
+Last reviewed: 12 August 2026.
 
-## Pexels photography
+## Pexels licence
 
-Pexels states that its photos and videos can be used for free, attribution is not required, and the files may be modified. See the Pexels License: https://www.pexels.com/license/
+Pexels permits its photos and videos to be used free of charge, modified, and used on websites. Attribution is not required under the Pexels licence, but this site identifies photographers and links to source pages whenever the information is available.
 
-The current site credits photographers or Pexels visibly where practical, even though attribution is not required.
+- Licence: https://www.pexels.com/license/
 
-### Home page
+## Home page
 
-- **Nashville and the Cumberland River at sunrise**
-  - Pexels photo: https://www.pexels.com/photo/nashville-skyline-with-pedestrian-bridge-at-sunrise-28981891/
-  - Photographer: Colon Freld
-  - Used as: home-page hero
+### Nashville and the Cumberland River at sunrise
+- Photographer: Colon Freld
+- Source: https://www.pexels.com/photo/nashville-skyline-with-pedestrian-bridge-at-sunrise-28981891/
+- Use: home-page hero
 
-- **Aerial view of a flooded city street / park after a storm**
-  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-a-flooded-city-street-24705698/
-  - Photographer: Radoslaw Sikorski
-  - Used as: flood-risk research card and project imagery
+### Flooded city streets and park after a storm
+- Photographer: Radoslaw Sikorski
+- Source: https://www.pexels.com/photo/aerial-view-of-a-flooded-city-street-24705698/
+- Use: climate hazards, infrastructure disruption and protection gaps
 
-- **Aerial view of water-treatment infrastructure**
-  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-water-treatment-facility-infrastructure-35425761/
-  - Photographer: Giant Asparagus
-  - Used as: urban-water-systems research card and project imagery
+### Water-treatment infrastructure
+- Photographer: Giant Asparagus
+- Source: https://www.pexels.com/photo/aerial-view-of-water-treatment-facility-infrastructure-35425761/
+- Use: urban water-system transitions, affordability and fragility
 
-- **Modern building with a green roof in an urban cityscape**
-  - Pexels photo: https://www.pexels.com/photo/aerial-view-of-modern-green-roof-building-in-urban-cityscape-37720193/
-  - Photographer: Miroslaw LT
-  - Used as: distributed stormwater systems research card and project imagery
+### Urban building with a vegetated green roof
+- Photographer: Miroslaw LT
+- Source: https://www.pexels.com/photo/aerial-view-of-modern-green-roof-building-in-urban-cityscape-37720193/
+- Use: distributed infrastructure, adoption and collective performance
 
-- **Aerial suburban neighborhood**
-  - Pexels photo: https://www.pexels.com/photo/an-aerial-shot-of-houses-in-a-neighborhood-10854905/
-  - Used as: flood-insurance project imagery
+## Research page
 
-### Research page
+The Research page uses a different photograph for each research front so the Home and Research pages do not repeat the same imagery.
 
-The three research banners reuse the Pexels flood, water-treatment and green-roof photographs listed above so the site's visual identity stays coherent across Home and Research.
+### Cars stranded on a flooded road after a severe storm
+- Photographer: Helena Jankovičová Kováčová
+- Source: https://www.pexels.com/photo/28447763/
+- Use: climate hazards, infrastructure disruption and protection gaps
 
-### Teaching page
+### Red Wing water-treatment facility, Minnesota
+- Photographer: Tom Fisk
+- Source: https://www.pexels.com/photo/12975468/
+- Use: urban water-system transitions, affordability and fragility
 
-- **River in mountains**: https://www.pexels.com/photo/river-in-mountains-16105128/ — Engineering Hydrology
-- **Wetland vegetation and water**: https://www.pexels.com/photo/scenic-wetlands-with-vibrant-vegetation-and-water-29885986/ — Introduction to Environmental Engineering
-- **Flowing water**: https://www.pexels.com/photo/flowing-water-6528803/ — Fluid Mechanics
-- **Long-exposure flowing water**: https://www.pexels.com/photo/long-exposure-of-flowing-water-12719831/ — Fluid Mechanics Laboratory
-- **Top view of a dam and flowing river**: https://www.pexels.com/photo/top-view-of-river-flowing-through-a-water-dam-9384849/ — Hydraulic Engineering
-- **Aerial wastewater treatment plant**: https://www.pexels.com/photo/aerial-view-of-a-wastewater-treatment-plant-35425762/ — Water and Wastewater Engineering
+### Vegetated roof and urban building
+- Photographer: K
+- Source: https://www.pexels.com/photo/37143590/
+- Use: distributed infrastructure, adoption and collective performance
 
-## Other images
+## Teaching page
+
+### River through a mountain landscape
+- Source: https://www.pexels.com/photo/river-in-mountains-16105128/
+- Use: Engineering Hydrology
+
+### Wetland vegetation and open water
+- Source: https://www.pexels.com/photo/scenic-wetlands-with-vibrant-vegetation-and-water-29885986/
+- Use: Introduction to Environmental Engineering
+
+### Flowing and turbulent water
+- Source: https://www.pexels.com/photo/flowing-water-6528803/
+- Use: Fluid Mechanics
+
+### Long-exposure flowing water
+- Source: https://www.pexels.com/photo/long-exposure-of-flowing-water-12719831/
+- Use: Fluid Mechanics Laboratory
+
+### Dam and flowing river
+- Source: https://www.pexels.com/photo/top-view-of-river-flowing-through-a-water-dam-9384849/
+- Use: Hydraulic Engineering
+
+### Wastewater-treatment facility
+- Photographer: Giant Asparagus
+- Source: https://www.pexels.com/photo/aerial-view-of-a-wastewater-treatment-plant-35425762/
+- Use: Water and Wastewater Engineering
+
+## Images supplied by the site owner
 
 ### `azizi-portrait.jpg`
+- Studio portrait of Koorosh Azizi
+- Supplied by the subject
+- Use: People page and profile metadata
 
-Studio portrait of Koorosh Azizi, supplied by the subject and used on the People page.
+## Public-domain U.S. government imagery
 
 ### `photos/nashville-iss.jpg`
-
 - Subject: Nashville and the Cumberland River from the International Space Station, 3 March 2022
-- Source: NASA: https://www.nasa.gov/image-article/nashville-tennessee/
-- Licence: public domain as a U.S. federal work
-- Used on: Contact page
+- Source: https://www.nasa.gov/image-article/nashville-tennessee/
+- Creator: NASA
+- Licence: public domain as a U.S. federal government work
+- Use: Contact page
 
-## Use principles
+## Editorial principles
 
-- No figures or visualizations from the lab's own papers are used as decorative website imagery.
-- Photographs of identifiable disaster survivors receiving aid are deliberately avoided as decorative material.
-- Pexels images are used under the Pexels License and linked back to their source pages here.
-- Public-domain U.S. government images are credited where used.
+- The site avoids using identifiable disaster survivors as decorative imagery.
+- It does not imply that a stock photograph documents a UHR Lab project site.
+- Captions describe the conceptual relationship between an image and a research area rather than presenting it as project evidence.
+- Published-paper figures are not used as decoration. Links to papers, repositories and interactive outputs are provided separately.
